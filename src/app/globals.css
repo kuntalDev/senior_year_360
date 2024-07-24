@@ -115,7 +115,82 @@ body .slick-dots li.slick-active button:before{
   right: auto;
   left: 40px;
 }
+.section-loader { 
+  text-align: center;
 
+  padding: 20px 0;
+}
+.section-loader p{
+  font-size: 18px !important;
+}
+
+.section-loader  .loader--ellipsis {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 64px;
+  margin: 0 auto;
+}
+
+.section-loader .loader--ellipsis div {
+  position: absolute;
+  top: 27px;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  background-color: #737373;
+}
+
+.section-loader .loader--ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: loader--ellipsis1 0.6s infinite;
+}
+
+.section-loader .loader--ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: loader--ellipsis2 0.6s infinite;
+}
+
+.section-loader .loader--ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: loader--ellipsis2 0.6s infinite;
+}
+
+.section-loader .loader--ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: loader--ellipsis3 0.6s infinite;
+}
+
+@keyframes loader--ellipsis1 {
+  0% {
+      transform: scale(0);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes loader--ellipsis3 {
+  0% {
+      transform: scale(1);
+  }
+
+  100% {
+      transform: scale(0);
+  }
+}
+
+@keyframes loader--ellipsis2 {
+  0% {
+      transform: translate(0, 0);
+  }
+
+  100% {
+      transform: translate(19px, 0);
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
