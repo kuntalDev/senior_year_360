@@ -49,6 +49,16 @@ import activityOne from '../assets/images/personal/activity-1.jpg'
 import activityTwo from '../assets/images/personal/activity-2.jpg'
 import activityThree from '../assets/images/personal/activity-3.jpg'
 
+import blbeOne from '../assets/images/personal/blbe-1.webp'
+import blbeTwo from '../assets/images/personal/blbe-2.webp'
+import blbeThree from '../assets/images/personal/blbe-3.webp'
+import blbeFour from '../assets/images/personal/blbe-4.webp'
+import blbeFive from '../assets/images/personal/blbe-5.webp'
+import awardsOne from '../assets/images/personal/awards-1.png'
+import awardsTwo from '../assets/images/personal/awards-2.png'
+import awardsThree from '../assets/images/personal/awards-3.png'
+import awardsFour from '../assets/images/personal/awards-4.png'
+
 
 export{
     headerLogo,graySearch,homeBanner,blackCrossIcon,userOne,userTwo,vidPlayIcon,
@@ -57,5 +67,6 @@ export{
     missionIconFour,missionIconFive,deviceFrams,lineSpk,contactThumbnail,testimonialOne,textQuotations,
     minFramTwo,recommendationBg,offerBg,footeLogo,SocialFBWhite,SocialIGWhite,SocialLIWhite,SocialYTWhite,
     menuTogleList,menuClose,testimonialTwo,userThree,userFour,pauseWhite,playWhite,freeTrailtBg,iconX,
-    personalUserOne,abtuOne,instituteTgaone,instituteTgatwo,activityOne,activityTwo,activityThree
+    personalUserOne,abtuOne,instituteTgaone,instituteTgatwo,activityOne,activityTwo,activityThree,blbeOne,
+    blbeTwo,blbeThree,blbeFour,blbeFive,awardsOne,awardsTwo,awardsThree,awardsFour
 }

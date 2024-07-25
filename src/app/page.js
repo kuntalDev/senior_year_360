@@ -8,14 +8,12 @@ import Journeyslider from "./Component/Widgets/Homepage/journeyslider"
 import Yearlyslider from "./Component/Widgets/Homepage/yearlyslider"
 import Homecontact from "./Component/Widgets/Homepage/homecontact"
 import Testimonialsslider from "./Component/Widgets/Homepage/testimonialsslider"
-// import Getoffer from "./Component/Widgets/Homepage/getoffer"
 import Freetrialmodal from "./Component/Widgets/Homepage/freetrialmodal"
-import SectionLoader from "./Component/Widgets/SectionLoader";
+import Loader from "./Component/Widgets/Loader";
 import Image from "next/image";
-import {homeBanner,arrowWhiteEight,missionIconOne,missionIconTwo,missionIconThree,missionIconFour,missionIconFive,deviceFrams,lineSpk} from '../app/assets/index';
+import {arrowWhiteEight,lineSpk} from '../app/assets/index';
 import Link from "next/link";
 export default function Page() {
-
   const targetDate = new Date('2024-12-31T23:59:59');
   
   const [homeData, sethomeData] = useState();
@@ -43,7 +41,7 @@ export default function Page() {
               setExpertData(response?.data?.expert_sec)
               setTestimonialsData(response?.data?.testimonials_sec)
               setContactUsData(response?.data?.contact_us_sec)
-              console.log('AAAAA',response)
+              // console.log('AAAAA',response)
           }
       })
       .catch(await function (error) {
@@ -64,7 +62,7 @@ export default function Page() {
       {homeData ? (
       <div>
 
-        <div className="bg-secondary py-2 xl:mt-[102px] mt-[72px]">
+        <div className="bg-secondary py-2 xl:mt-[102px] lg:mt-[84px] mt-[72px]">
           <div className="container mx-auto">
             <div className="flex md:flex-row flex-col items-center justify-center">
               <p className="2xl:text-lg lg:text-base text-sm text-white font-normal md:py-2 md:mr-3 md:mb-0 mb-1">
@@ -78,7 +76,7 @@ export default function Page() {
         <div style={{ backgroundImage: `url(${bannerData?.banner_image})` }} className="bg-gray-400 bg-cover bg-no-repeat bg-center lmd:py-28 md:py-20 sm:py-16 py-12"> 
           <div className="container mx-auto">
             <div className="max-w-[510px] bg-black bg-opacity-55 text-white md:px-8 md:py-9 px-5 py-5 md:text-left text-center">
-              <h1 className="section-title mb-3" dangerouslySetInnerHTML={{__html: bannerData?.banner_title}}></h1>
+              <h1 className="section-title mb-3 primary-inherit" dangerouslySetInnerHTML={{__html: bannerData?.banner_title}}></h1>
               <p className="md:text-lg sm:text-base text-sm font-normal mb-5" dangerouslySetInnerHTML={{__html: bannerData?.banner_description}}></p>
               <div className="md:space-x-4 md:space-y-0 space-y-4 md:block flex flex-col items-center">
                 <Link href="/" className="fill-btn md:w-auto text-center md:text-left md:justify-start justify-center">Registration</Link>
@@ -90,10 +88,10 @@ export default function Page() {
 
         <div className="py-14 border-b border-solid border-[#E0E0E0]">
           <div className="container mx-auto">
-            <div className="text-black text-center md:mb-14 mb-8">
+            <div className="text-black text-center md:mb-14 mb-8 max-w-[910px] mx-auto">
               <h2 className="section-title" dangerouslySetInnerHTML={{__html: ourServicesData?.our_services_title}}></h2>
             </div>
-            <div className="grid xl:grid-cols-5 lmd:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-8 md:gap-y-3 gap-y-6">
+            <div className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-8 md:gap-y-4 gap-y-6">
               
               {ourServicesData?.our_services_category .map((items, i) => {
                   return (
@@ -113,7 +111,7 @@ export default function Page() {
               <div>
                 <div className="text-[#484848] md:text-left text-center">
                   <h2 className="section-title text-black mb-3">{seniorJourneyData?.senior_journey_title}</h2>
-                  <h6 className="2xl:text-[28px] md:text-2xl text-lg 2xl:leading-10 md:leading-8 leading-6 font-normal text-black mb-4" dangerouslySetInnerHTML={{__html: seniorJourneyData?.senior_journey_sub_title}}></h6>
+                  <h6 className="2xl:text-[28px] md:text-2xl text-lg 2xl:leading-10 md:leading-8 leading-6 font-normal text-black mb-4 primary-inherit" dangerouslySetInnerHTML={{__html: seniorJourneyData?.senior_journey_sub_title}}></h6>
                   <p className="md:text-lg sm:text-base text-sm font-normal mb-6 text-[#484848]" dangerouslySetInnerHTML={{__html: seniorJourneyData?.senior_journey_description}}></p>
                   <Link href={seniorJourneyData?.sj_more_explore_button_url} className="fill-btn">{seniorJourneyData?.sj_more_explore_button_text}</Link>
                 </div>
@@ -131,7 +129,7 @@ export default function Page() {
               <h2 className="section-title mb-3">
                 {seniorOfTheYearData?.senior_of_the_year_title}
               </h2>
-              <p className="2xl:text-2xl text-xl font-normal" dangerouslySetInnerHTML={{__html: seniorOfTheYearData?.senior_of_the_year_description}}></p>
+              <p className="2xl:text-2xl text-xl font-normal primary-inherit" dangerouslySetInnerHTML={{__html: seniorOfTheYearData?.senior_of_the_year_description}}></p>
             </div>
               <Yearlyslider />
             <div className="text-center mt-14">
@@ -150,10 +148,10 @@ export default function Page() {
               </h2>
               <p className="2xl:text-2xl text-xl font-normal">{ourMissionData?.our_mission_description}</p>
             </div>
-            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-1"> 
+            <div className="flex flex-wrap justify-center"> 
                 {ourMissionData?.our_mission_content .map((items, i) => {
                     return (
-                      <div key={i} className="md:scale-110 scale-105">
+                      <div key={i} className="md:scale-110 scale-105 xl:w-1/5 lg:w-1/4 md:w-1/3 sm:w-2/4 w-full max-w-96">
                         <div className="relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden border border-dashed border-[#A4A4A4] bg-white group hover:bg-primary hover:[box-shadow:0px_4px_33px_0px_rgba(0,_0,_0,_0.25)]">
                           <div className="text-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-9 py-3">
                             <div className="2xl:max-w-16 max-w-10 mx-auto 2xl:mb-4 mb-3">
@@ -236,18 +234,13 @@ export default function Page() {
         <div className="lg:pt-32 pt-24 2xl:pb-28 pb-12 relative before:absolute before:w-[62vw] before:bg-[#F6F6F6] before:right-0 before:bottom-0 before:top-40 before:block">
           <div className="container mx-auto relative z-20">
             <div className="3xl:w-5/12 lg:w-[45%] 2xl:mb-14 lg:mb-4 mb-8 md:text-left text-center">
-              <h5 className="text-primary 2xl:text-3xl lg:text-xl md:text-2xl text-xl font-bold mb-3">{testimonialsData.testimonials_title}</h5>
-              <h2 className="section-title text-black">{testimonialsData.testimonials_sub_title}</h2>
+            <h2 className="section-title text-black mb-3">{testimonialsData.testimonials_sub_title}</h2>
+              <h5 className="text-primary 2xl:text-3xl lg:text-xl md:text-2xl text-xl font-bold">{testimonialsData.testimonials_title}</h5>
+              
             </div>
             <Testimonialsslider />
           </div>
         </div>
-
-        {/* <div className="md:py-24 py-16"> 
-          <div className="container mx-auto">
-            <Getoffer />
-          </div>
-        </div> */}
 
         <div className="2xl:pt-24 overflow-hidden relative z-20 after:w-screen after:bg-secondary after:absolute after:left-0 after:bottom-0 after:h-28">
           <div className="container mx-auto relative z-10">
@@ -266,7 +259,7 @@ export default function Page() {
         </div>
         ):(
           <div>
-              <SectionLoader/>
+              <Loader/>
           </div>
         )     
       )}

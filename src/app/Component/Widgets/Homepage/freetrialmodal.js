@@ -32,7 +32,7 @@ export default function SearchPopup() {
             <div style={{ backgroundImage: `linear-gradient(90deg, #0079FF -0.72%, #13D9F3 50%)` }} className="rounded-md relative overflow-hidden">
               <div style={{ backgroundImage: `url(${freeTrailtBg.src})` }} className="orbit-bgImg bg-no-repeat bg-contain bg-[center_right]">
                 <div className="md:px-16 sm:px-10 px-6 2xl:py-14 lmd:py-10 py-10">
-                  <div className="absolute -rotate-45 lg:top-5 md:top-4 sm:top-[12px] top-[8px] md:-left-[58px] sm:-left-[51px] -left-[36px] anton-font shadow-lg lg:text-sm md:text-[11px] text-[8px] uppercase font-black bg-[#FFE500] text-center w-fit sm:px-12 px-8 lmd:py-2.5 sm:py-2 py-1.5" style={{ letterSpacing: `0px` }}>
+                  <div className="absolute -rotate-45 lg:top-5 md:top-4 sm:top-[12px] top-[7px] md:-left-[58px] sm:-left-[51px] -left-[36px] anton-font shadow-lg lg:text-sm md:text-[11px] text-[8px] uppercase font-black bg-[#FFE500] text-center w-fit sm:px-12 px-8 lmd:py-2.5 sm:py-2 py-1.5" style={{ letterSpacing: `0px` }}>
                     Free Trial 
                   </div>
                   <div className="3xl:max-w-[638px] 2xl:max-w-[660px] max-w-[700px]">
@@ -78,4 +78,3 @@ export default function SearchPopup() {
     </>
   );
 }
-
