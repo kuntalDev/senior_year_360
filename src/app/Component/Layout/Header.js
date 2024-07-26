@@ -55,7 +55,7 @@ export default function Header({menuTemeSettingData}) {
                            
                         </ul>
                         {menuTemeSettingData?.registration_button_text ? (
-                             <Link href='/' className='fill-btn lmd:ml-12 lg:ml-9 w-fit'>
+                             <Link href={menuTemeSettingData?.registration_button_url} className='fill-btn lmd:ml-12 lg:ml-9 w-fit'>
                                 {menuTemeSettingData?.registration_button_text}
                             </Link>
                         ) : null}

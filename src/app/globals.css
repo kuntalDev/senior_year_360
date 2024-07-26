@@ -93,6 +93,16 @@ body .slick-dots li.slick-active button:before{
   background-image: url('assets/images/icon/slider-right.svg');
   right: -60px;
 }
+.senior-slde .slick-track{
+  display: flex;
+}
+.senior-slde .slick-track .slick-slide{
+  height: auto;
+}
+.senior-slde .slick-track .slick-slide>div>div,
+.senior-slde .slick-track .slick-slide>div{
+  height: 100%;
+}
 .testimonialsslider .slick-arrow{
   padding: 0;
   width: 35px;
@@ -116,6 +126,39 @@ body .slick-dots li.slick-active button:before{
   right: auto;
   left: 40px;
 }
+
+.btn-ring-animation {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: ring 1.2s linear infinite;
+  
+}
+.privacy_hover  {
+  transition: all ease-in-out .3s;
+}
+.privacy_hover:hover  {
+  text-decoration: underline;
+}
+@keyframes ring {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.btn-ring-animation.rings-animation {
+  border: 2px solid #0085FF;
+  border-color: #0085FF transparent #0085FF transparent;
+}
+
 
 @keyframes fadeIn {
   from {

@@ -51,18 +51,18 @@ export default function yearlyslider() {
   return (
     <Slider {...settingsTwo} className="senior-slde">
       <div>
-        <div className="p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
+        <div className="flex flex-col h-full p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
           <div className="w-7 ml-auto">
             <Image src={vaticanoCheckOff} alt="verification" className="" priority/>
           </div>
-          <div className="mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
+          <div className="w-full mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
             <Image src={seniorPersonOne} alt="seniorPerson" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
           </div>
           <div className="text-center">
             <h4 className="3xl:text-2xl text-xl text-black font-semibold inter-font">Antonio Jackman</h4>
             <p className="text-sm text-[#939393] font-medium">Senior Student</p>
           </div>
-          <div className="flex flex-col mt-12 mb-3">
+          <div className="flex flex-col mt-auto pt-12 mb-3">
             <div className="bg-[#E8E8E8] rounded-full flex">
               <div className="bg-[#0278FA] rounded-full h-3 relative" style={{ width: '26%' }}>
                 <div className="progress-tooltp">
@@ -77,18 +77,18 @@ export default function yearlyslider() {
         </div>
       </div>
       <div>
-        <div className="p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
+        <div className="flex flex-col h-full p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
           <div className="w-7 ml-auto">
             <Image src={vaticanoCheckOn} alt="verification" className="" priority/>
           </div>
-          <div className="mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
+          <div className="w-full mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
             <Image src={seniorPersonTwo} alt="seniorPerson" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
           </div>
           <div className="text-center">
             <h4 className="3xl:text-2xl text-xl text-black font-semibold inter-font">Will Smith</h4>
             <p className="text-sm text-[#939393] font-medium">Senior Student</p>
           </div>
-          <div className="flex flex-col mt-12 mb-3">
+          <div className="flex flex-col mt-auto pt-12 mb-3">
             <div className="bg-[#E8E8E8] rounded-full flex">
               <div className="bg-[#0278FA] rounded-full h-3 relative" style={{ width: '58%' }}>
                 <div className="progress-tooltp">
@@ -103,18 +103,18 @@ export default function yearlyslider() {
         </div>
       </div>
       <div>
-        <div className="p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
+        <div className="flex flex-col h-full p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
           <div className="w-7 ml-auto">
             <Image src={vaticanoCheckOff} alt="verification" className="" priority/>
           </div>
-          <div className="mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
+          <div className="w-full mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
             <Image src={seniorPersonThree} alt="seniorPerson" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
           </div>
           <div className="text-center">
             <h4 className="3xl:text-2xl text-xl text-black font-semibold inter-font">Meryl  Blanchett</h4>
             <p className="text-sm text-[#939393] font-medium">Senior Student</p>
           </div>
-          <div className="flex flex-col mt-12 mb-3">
+          <div className="flex flex-col mt-auto pt-12 mb-3">
             <div className="bg-[#E8E8E8] rounded-full flex">
               <div className="bg-[#0278FA] rounded-full h-3 relative" style={{ width: '18%' }}>
                 <div className="progress-tooltp">
@@ -129,18 +129,18 @@ export default function yearlyslider() {
         </div>
       </div>
       <div>
-        <div className="p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
+        <div className="flex flex-col h-full p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
           <div className="w-7 ml-auto">
             <Image src={vaticanoCheckOff} alt="verification" className="" priority/>
           </div>
-          <div className="mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
+          <div className="w-full mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
             <Image src={seniorPersonFour} alt="seniorPerson" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
           </div>
           <div className="text-center">
             <h4 className="3xl:text-2xl text-xl text-black font-semibold inter-font">Marlon Brando</h4>
             <p className="text-sm text-[#939393] font-medium">Senior Student</p>
           </div>
-          <div className="flex flex-col mt-12 mb-3">
+          <div className="flex flex-col mt-auto pt-12 mb-3">
             <div className="bg-[#E8E8E8] rounded-full flex">
               <div className="bg-[#0278FA] rounded-full h-3 relative" style={{ width: '52%' }}>
                 <div className="progress-tooltp">
@@ -155,18 +155,18 @@ export default function yearlyslider() {
         </div>
       </div>
       <div>
-        <div className="p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
+        <div className="flex flex-col h-full p-4 bg-white border border-solid border-[#f0f0f0] [box-shadow:0px_4px_8px_0px_rgba(0,_0,_0,_0.08)] text-center rounded-lg">
           <div className="w-7 ml-auto">
             <Image src={vaticanoCheckOff} alt="verification" className="" priority/>
           </div>
-          <div className="mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
+          <div className="w-full mb-4 relative before:block before:w-full before:pt-[100%] rounded-full overflow-hidden bg-slate-400 max-w-40 mx-auto">
             <Image src={seniorPersonFive} alt="seniorPerson" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
           </div>
           <div className="text-center">
             <h4 className="3xl:text-2xl text-xl text-black font-semibold inter-font">Nicole Hanks</h4>
             <p className="text-sm text-[#939393] font-medium">Senior Student</p>
           </div>
-          <div className="flex flex-col mt-12 mb-3">
+          <div className="flex flex-col mt-auto pt-12 mb-3">
             <div className="bg-[#E8E8E8] rounded-full flex">
               <div className="bg-[#0278FA] rounded-full h-3 relative" style={{ width: '36%' }}>
                 <div className="progress-tooltp">
@@ -174,7 +174,7 @@ export default function yearlyslider() {
                 </div>
               </div>
             </div>
-            <p className="ml-auto text-xs text-[#575757] font-normal mb-2">Votes 6840</p>
+            <p className="ml-auto text-xs text-[#575757] font-normal mt-2">Votes 6840</p>
           </div>
           
           <Link href="/" className="bg-transparent border border-solid border-primary hover:bg-primary hover:bg-opacity-50 border-opacity-50 text-sm tracking-wider inline-block text-primary hover:text-white font-semibold no-underline rounded px-4 py-1 transition-all">Vote</Link>
