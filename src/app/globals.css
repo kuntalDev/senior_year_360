@@ -14,6 +14,10 @@
 button:focus{
   outline: none;
 }
+p a{
+  color: #0085FF;
+  text-decoration: underline;
+}
 .inter-font {
   font-family: "Inter", sans-serif;
 }
@@ -227,8 +231,27 @@ body .slick-dots li.slick-active button:before{
   cursor: default;
 }
 
-
-
+.fullHitSidr .slick-track{
+  display: flex;
+}
+.fullHitSidr .slick-track .slick-slide{
+  height: auto;
+}
+.fullHitSidr .slick-track .slick-slide>div>div,
+.fullHitSidr .slick-track .slick-slide>div{
+  height: 100%;
+}
+.text-quot::before{
+  flex-shrink: 0;
+  content: '';
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-image: url('../app/assets/images/personal/text-quotations.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
 .honorsAwardslider .slick-track{
   display: flex;
 }
@@ -252,6 +275,11 @@ body .slick-dots li.slick-active button:before{
   display: block !important;
   width: fit-content !important;
   margin: 0 auto;
+}
+
+[src="/_next/static/media/scholarship-2.31fa0b4f.png"],
+[src="/_next/static/media/scholarship-3.7cb17525.png"]{
+  mix-blend-mode: multiply;
 }
 
 @media (min-width:991px){
@@ -289,6 +317,71 @@ body .slick-dots li.slick-active button:before{
   min-height: calc(100% - var(--bs-modal-margin) * 2);
   margin: var(--bs-modal-margin) auto;
 }
+.custisMulti .css-1u9des2-indicatorSeparator,
+.custisMulti .css-1wy0on6 [class^=" css-"]:first-child,
+.custisMulti .css-1wy0on6 [class^=" css-"]:first-child{
+  display: none !important;
+}
+.custisMulti .css-13cymwt-control {
+  position: relative;
+  min-height: 40px;
+  border: 1px solid #9b9b9b;
+}
+.custisMulti .css-1wy0on6{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.custisMulti .css-13cymwt-control:focus{
+  box-shadow: none !important;
+  border: 1px solid #737373 !important;
+}
+.custisMulti .css-13cymwt-control:focus .css-t3ipsp-control,
+.custisMulti .css-t3ipsp-control:hover {
+  border-color: #00000000 !important;
+}
+.custisMulti .css-1p3m7a8-multiValue {
+  background-color: #00A6FB;
+  border: unset;
+  border-radius: 50px;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  flex-shrink: 0;
+}
+.custisMulti .css-1p3m7a8-multiValue .css-9jq23d {
+  font-size: 14px;
+  color: #FFF;
+  font-weight: 500;
+  padding: 0;
+}
+.custisMulti .css-v7duua {
+  width: 14px;
+  height: 14px;
+  background-color: #FFF;
+  border-radius: 50px;
+  padding: 1px;
+  margin-left: 3px;
+}
+.custisMulti .css-v7duua svg{
+  fill: #00A6FB;
+  width: 100%;
+}
+.custisMulti .css-1dyz3mf {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.custisMulti .css-1dyz3mf {
+  overflow: auto;
+  scrollbar-color: #888888 #f1f1f1;
+  scrollbar-width: thin;
+  -ms-overflow-style: none;
+}
+
+
 
 @media (max-width:1580px) {
   .senior-slde{
@@ -301,7 +394,6 @@ body .slick-dots li.slick-active button:before{
     max-width: 1200px;
   }
 }
-
 @media (max-width:1250px) {
   .senior-slde{
     max-width: 1000px;

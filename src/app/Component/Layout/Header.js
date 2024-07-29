@@ -37,7 +37,7 @@ export default function Header({menuTemeSettingData}) {
                 <div className='w-full flex items-center'>
                     <Link href='/' className='block xl:w-[235px] w-[180px]'>
                         {menuTemeSettingData?.header_logo ? (
-                            <Image src={menuTemeSettingData.header_logo} width={235} height={37}  alt="Gradient-Tick"/>
+                            <Image src={menuTemeSettingData.header_logo} width={235} height={37}  alt="Gradient-Tick" priority/>
                         ) : null}
                     </Link>
                     <nav className={`flex lg:flex-row flex-col lg:items-center ml-auto lg:p-0 p-8 lg:static fixed top-[72px] transition-all lg:border-t-0 border-t border-solid border-[#c8d2d8] bg-white lg:bg-inherit ${menuOpen ? 'left-0' : '-left-full'} lg:w-auto w-full lg:h-auto h-[calc(100vh-72px)] space-y-4 lg:space-y-0 overflow-y-auto`}>

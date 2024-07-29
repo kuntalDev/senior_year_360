@@ -58,7 +58,25 @@ import awardsOne from '../assets/images/personal/awards-1.png'
 import awardsTwo from '../assets/images/personal/awards-2.png'
 import awardsThree from '../assets/images/personal/awards-3.png'
 import awardsFour from '../assets/images/personal/awards-4.png'
+import testiReviewedOne from '../assets/images/personal/reviewed-1.png'
+import testiReviewedTwo from '../assets/images/personal/reviewed-2.png'
+import testiReviewedThree from '../assets/images/personal/reviewed-3.png'
+import scholarshipOne from '../assets/images/personal/scholarship-1.png'
+import scholarshipTwo from '../assets/images/personal/scholarship-2.png'
+import scholarshipThree from '../assets/images/personal/scholarship-3.png'
 
+import seniorsOne from '../assets/images/seniors-listing/senior-1.jpg'
+import seniorsTwo from '../assets/images/seniors-listing/senior-2.jpg'
+import seniorsThree from '../assets/images/seniors-listing/senior-3.jpg'
+import seniorsFour from '../assets/images/seniors-listing/senior-4.jpg'
+import seniorsFive from '../assets/images/seniors-listing/senior-5.jpg'
+import seniorsSix from '../assets/images/seniors-listing/senior-6.jpg'
+import seniorsSeven from '../assets/images/seniors-listing/senior-7.jpg'
+import seniorsEight from '../assets/images/seniors-listing/senior-8.jpg'
+import seniorsNine from '../assets/images/seniors-listing/senior-9.jpg'
+import seniorsTen from '../assets/images/seniors-listing/senior-10.jpg'
+import seniorsEleven from '../assets/images/seniors-listing/senior-11.jpg'
+import seniorsTwelve from '../assets/images/seniors-listing/senior-12.jpg'
 
 export{
     headerLogo,graySearch,homeBanner,blackCrossIcon,userOne,userTwo,vidPlayIcon,
@@ -68,5 +86,8 @@ export{
     minFramTwo,recommendationBg,offerBg,footeLogo,SocialFBWhite,SocialIGWhite,SocialLIWhite,SocialYTWhite,
     menuTogleList,menuClose,testimonialTwo,userThree,userFour,pauseWhite,playWhite,freeTrailtBg,iconX,
     personalUserOne,abtuOne,instituteTgaone,instituteTgatwo,activityOne,activityTwo,activityThree,blbeOne,
-    blbeTwo,blbeThree,blbeFour,blbeFive,awardsOne,awardsTwo,awardsThree,awardsFour
+    blbeTwo,blbeThree,blbeFour,blbeFive,awardsOne,awardsTwo,awardsThree,awardsFour,testiReviewedOne,
+    testiReviewedTwo,testiReviewedThree,scholarshipOne,scholarshipTwo,scholarshipThree,seniorsOne,seniorsTwo,
+    seniorsThree,seniorsFour,seniorsFive,seniorsSix,seniorsSeven,seniorsEight,seniorsNine,seniorsTen,seniorsEleven,
+    seniorsTwelve
 }

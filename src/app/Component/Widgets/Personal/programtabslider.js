@@ -43,7 +43,7 @@ const TabPrice = () => {
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
             <div>
               <div className="relative rounded-md overflow-hidden mb-3">
-                <div className="relative before:block before:w-full before:pt-[100%]">
+                <div className="relative before:block before:w-full before:pt-[66%]">
                   <Image src={activityOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
                 </div>
               </div>
@@ -52,7 +52,7 @@ const TabPrice = () => {
 
             <div>
               <div className="relative rounded-md overflow-hidden mb-3">
-                <div className="relative before:block before:w-full before:pt-[100%]">
+                <div className="relative before:block before:w-full before:pt-[66%]">
                   <Image src={activityTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
                 </div>
                 <div className="flex items-center justify-center absolute z-20 left-0 top-0 w-full h-full bg-black bg-opacity-40">
@@ -66,7 +66,7 @@ const TabPrice = () => {
 
             <div>
               <div className="relative rounded-md overflow-hidden mb-3">
-                <div className="relative before:block before:w-full before:pt-[100%]">
+                <div className="relative before:block before:w-full before:pt-[66%]">
                   <Image src={activityThree} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
                 </div>
               </div>
@@ -78,7 +78,7 @@ const TabPrice = () => {
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
             <div>
               <div className="relative rounded-md overflow-hidden mb-3">
-                <div className="relative before:block before:w-full before:pt-[100%]">
+                <div className="relative before:block before:w-full before:pt-[66%]">
                   <Image src={activityOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
                 </div>
               </div>
@@ -87,7 +87,7 @@ const TabPrice = () => {
 
             <div>
               <div className="relative rounded-md overflow-hidden mb-3">
-                <div className="relative before:block before:w-full before:pt-[100%]">
+                <div className="relative before:block before:w-full before:pt-[66%]">
                   <Image src={activityThree} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
                 </div>
                 <div className="flex items-center justify-center absolute z-20 left-0 top-0 w-full h-full bg-black bg-opacity-40">
@@ -101,7 +101,7 @@ const TabPrice = () => {
 
             <div>
               <div className="relative rounded-md overflow-hidden mb-3">
-                <div className="relative before:block before:w-full before:pt-[100%]">
+                <div className="relative before:block before:w-full before:pt-[66%]">
                   <Image src={activityTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
                 </div>
               </div>

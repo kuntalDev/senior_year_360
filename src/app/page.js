@@ -188,7 +188,9 @@ export default function Page() {
                   <div className="relative">
                     <div className="bg-[#FAFAFA] w-full -top-[50px] absolute left-1/2 -translate-x-1/2 before:block before:w-full before:pt-[100%] rounded-full overflow-hidden max-w-[600px]"></div>
                     <div className="relative z-10 before:block before:w-full before:pt-[100%] max-w-[460px] mx-auto">
-                      <Image src={expertData?.expert_image} width="491" height="488" alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
+                      {expertData?.expert_image && (
+                        <Image src={expertData?.expert_image} width="491" height="488" alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -205,7 +207,9 @@ export default function Page() {
                   <div className="relative">
                     <div className="bg-[#FAFAFA] w-full -top-[50px] absolute left-1/2 -translate-x-1/2 before:block before:w-full before:pt-[100%] rounded-full overflow-hidden max-w-[600px]"></div>
                     <div className="relative z-10 before:block before:w-full before:pt-[100%] max-w-[460px] mx-auto">
-                      <Image src={personalizedData?.personalized_image} width="491" height="488" alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
+                      {personalizedData?.personalized_image && (
+                        <Image src={personalizedData?.personalized_image} width="491" height="488" alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
+                      )}
                     </div>
                   </div>
                   <div className="2xl:w-[200px] w-[120px] absolute 3xl:left-[11px] 2xl:left-0 bottom-0 z-10">
@@ -236,7 +240,6 @@ export default function Page() {
             <div className="3xl:w-5/12 lg:w-[45%] 2xl:mb-14 lg:mb-4 mb-8 md:text-left text-center">
             <h2 className="section-title text-black mb-3">{testimonialsData?.testimonials_sub_title}</h2>
               <h5 className="text-primary 2xl:text-3xl lg:text-xl md:text-2xl text-xl font-bold">{testimonialsData?.testimonials_title}</h5>
-              
             </div>
             <Testimonialsslider testimonials_sec={testimonialsData}/>
           </div>

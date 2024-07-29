@@ -2,16 +2,31 @@ import AboutmeSlider from "../Component/Widgets/Personal/aboutme"
 import ProgramtabSlider from "../Component/Widgets/Personal/programtabslider"
 import TimelineSlider from "../Component/Widgets/Personal/timelineslider"
 import BubblesSlider from "../Component/Widgets/Personal/bubblesslider"
-import Honorsawards from "../Component/Widgets/Personal/honorsawards"
+// import Honorsawards from "../Component/Widgets/Personal/honorsawards"
+import Personalizedtestimonials from "../Component/Widgets/Personal/personalizedtestimonials"
+import Countdown from "../Component/Widgets/Homepage/countdown"
 import Image from "next/image";
 import { Layouts } from "../Component";
-import {personalUserOne,instituteTgaone,instituteTgatwo} from '../assets/index';
+import {personalUserOne,instituteTgaone,instituteTgatwo,scholarshipOne,scholarshipTwo,scholarshipThree} from '../assets/index';
 import Link from "next/link";
 export default function Personal() {
+  const targetDate = new Date('2024-12-31T23:59:59');
   return (
     <Layouts>
       <div>
-        <div className="xl:mt-[102px] mt-[72px] lg:py-7 py-3">
+
+        <div className="bg-secondary py-2 xl:mt-[102px] lg:mt-[84px] mt-[72px]">
+          <div className="container mx-auto">
+            <div className="flex md:flex-row flex-col items-center justify-center">
+              <p className="2xl:text-lg lg:text-base text-sm text-white font-normal md:py-2 md:mr-3 md:mb-0 mb-1">
+                Days left to <strong>Graduate</strong>
+              </p>
+              <Countdown targetDate={targetDate} />
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:pt-16 pt-12">
           <div className="container mx-auto">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
               <div>
@@ -26,7 +41,7 @@ export default function Personal() {
                 </div>
               </div>
               <div>
-                <div className="relative before:block before:w-full before:pt-[100%] max-w-[603px] ml-auto rounded-md overflow-hidden">
+                <div className="relative before:block before:w-full before:pt-[70%] max-w-[603px] ml-auto rounded-md overflow-hidden">
                   <Image src={personalUserOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                 </div>
               </div>
@@ -40,15 +55,27 @@ export default function Personal() {
               <h2 className="section-title text-black mb-3">
                 About Me
               </h2>
-              <h4 className="text-black font-normal 2xl:text-3xl lg:text-2xl md:text-xl text-2xl mb-3">Discover key <span className="text-primary font-semibold">resources to help</span> you transition smoothly to senior year.</h4>
+              <h4 className="text-black font-normal 2xl:text-3xl lg:text-2xl md:text-xl text-2xl">Discover key <span className="text-primary font-semibold">resources to help</span> you transition smoothly to senior year.</h4>
             </div>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
               <div>
                 <AboutmeSlider/>
               </div>
               <div>
-                <div className="md:space-y-7 space-y-5"> 
-                  <p className="md:text-lg sm:text-base text-sm font-normal text-[#484848] leading-relaxed">Explore a robust array of tools and resources designed to propel you to academic success. Whether you&apos;re seeking additional support in specific subjects, looking for tutoring options, or aiming to gain a competitive edge in college admissions, our website has you covered. Access invaluable resources such as academic support services, tutoring programs, and comprehensive college prep materials. Explore a robust array of tools and resources designed to propel you to academic success. Whether you&apos;re seeking additional support in specific subjects, looking for tutoring options, or aiming to gain a competitive edge in college admissions, our website has you covered. Access invaluable resources such as academic support services, tutoring programs, and comprehensive college prep materials. </p>
+                <div> 
+                  <h4 className="lg:text-3xl text-2xl font-bold text-black mb-4">Achievements</h4>
+                  <ul className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 text-black list-decimal pl-5 gap-3 mb-8">
+                    <li className="md:text-lg sm:text-base text-sm font-normal">Academic Excellence</li>
+                    <li className="md:text-lg sm:text-base text-sm font-normal">Scholarships and Awards</li>
+                    <li className="md:text-lg sm:text-base text-sm font-normal">Research and Publications</li>
+                    <li className="md:text-lg sm:text-base text-sm font-normal">Community Service</li>
+                    <li className="md:text-lg sm:text-base text-sm font-normal">Competitions and Honors</li>
+                    <li className="md:text-lg sm:text-base text-sm font-normal">Arts and Sports</li>
+                    <li className="md:text-lg sm:text-base text-sm font-normal">Internships and Work Experience</li>
+                    <li className="md:text-lg sm:text-base text-sm font-normal">Professional Development</li>
+                    <li className="md:text-lg sm:text-base text-sm font-normal">Global Engagement</li>
+                  </ul>
+                  <h4 className="lg:text-3xl text-2xl font-bold text-black mb-4">Future Goals</h4>
                   <p className="md:text-lg sm:text-base text-sm font-normal text-[#484848] leading-relaxed">Explore a robust array of tools and resources designed to propel you to academic success. Whether you&apos;re seeking additional support in specific subjects, looking for tutoring options, or aiming to gain a competitive edge in college admissions, our website has you covered.</p>
                 </div>
               </div>
@@ -58,38 +85,38 @@ export default function Personal() {
 
         <div>
           <div className="container mx-auto">
-            <div className="lg:mb-0 mb-3">
-              <h5 className="lg:text-3xl text-2xl font-bold text-black">Education</h5>
-            </div>
-            <div className="flex flex-wrap lg:space-y-0 space-y-5">
-              <div className="flex flex-wrap lg:w-8/12 w-full md:space-y-0 space-y-5">
-                <div className="md:w-6/12 w-full flex items-end">
-                  <div className="flex space-x-4">
-                    <div className="shrink-0 w-20">
-                      <Image src={instituteTgaone} alt="instituteTga" priority/>
+            <div className="border border-solid border-[#E7E7E7] rounded-lg py-5 px-7">
+              <h5 className="lg:text-3xl text-2xl font-bold text-black bg-white px-2 w-fit -mt-10">Education</h5>
+              <div className="flex flex-wrap lg:space-y-0 space-y-5 lg:mt-0 mt-6">
+                <div className="flex flex-wrap lg:w-8/12 w-full md:space-y-0 space-y-5">
+                  <div className="md:w-6/12 w-full flex items-end">
+                    <div className="flex space-x-4">
+                      <div className="shrink-0 lg:w-20 w-16">
+                        <Image src={instituteTgaone} alt="instituteTga" priority/>
+                      </div>
+                      <div className="grow">
+                        <h5 className="text-xl font-semibold text-[#484848]">Academic Magnet High School</h5>
+                        <p className="text-base font-normal text-[#484848]">Bachelor of [Your Degree], [Your Major] August, 2022- Present</p>
+                      </div>
                     </div>
-                    <div className="grow">
-                      <h5 className="text-xl font-semibold text-[#484848]">Academic Magnet High School</h5>
-                      <p className="text-base font-normal text-[#484848]">Bachelor of [Your Degree], [Your Major] August, 2022- Present</p>
+                  </div>
+                  <div className="md:w-6/12 w-full flex items-end md:px-5">
+                    <div className="flex space-x-4">
+                      <div className="shrink-0 lg:w-20 w-16">
+                        <Image src={instituteTgatwo} alt="instituteTga" priority/>
+                      </div>
+                      <div className="grow">
+                        <h5 className="text-xl font-semibold text-[#484848]">Law colleges in USA</h5>
+                        <p className="text-base font-normal text-[#484848]">Bachelor of [Your Degree], [Your Major] August, 2022- Present</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div className="md:w-6/12 w-full flex items-end md:px-5">
-                  <div className="flex space-x-4">
-                    <div className="shrink-0 w-20">
-                      <Image src={instituteTgatwo} alt="instituteTga" priority/>
-                    </div>
-                    <div className="grow">
-                      <h5 className="text-xl font-semibold text-[#484848]">Law colleges in USA</h5>
-                      <p className="text-base font-normal text-[#484848]">Bachelor of [Your Degree], [Your Major] August, 2022- Present</p>
-                    </div>
+                <div className="lg:w-4/12 w-full">
+                  <div className="lg:border-l border-solid border-[#DFDFDF] lg:px-12 px-3">
+                    <h5 className="lg:text-3xl text-2xl font-bold text-black mb-3">Skills</h5>
+                    <p className="text-base font-normal text-[#484848]">Programming languages, software, tools, Communication, Teamwork, Problem-solving, etc</p>
                   </div>
-                </div>
-              </div>
-              <div className="lg:w-4/12 w-full">
-                <div className="border-l border-solid border-[#DFDFDF] lg:px-12 px-3">
-                  <h5 className="lg:text-3xl text-2xl font-bold text-black lg:mb-12 mb-3 lg:-mt-8">Skills</h5>
-                  <p className="text-base font-normal text-[#484848]">Programming languages, software, tools, Communication, Teamwork, Problem-solving, etc</p>
                 </div>
               </div>
             </div>
@@ -98,6 +125,9 @@ export default function Personal() {
 
         <div className="lg:py-24 py-16">
           <div className="container mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="section-title text-black mb-3">Significant Moments</h2>
+            </div>
             <TimelineSlider/>
           </div>
         </div>
@@ -111,6 +141,79 @@ export default function Personal() {
           </div>
         </div>
 
+        <div className="bottomSliderArrox py-16">
+          <div className="container mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="section-title text-black mb-3">Testimonials</h2>
+              <h4 className="text-black font-normal 2xl:text-3xl lg:text-2xl md:text-xl text-2xl">What Our Friends, Family, And Teachers Are Saying</h4>
+            </div>
+            <Personalizedtestimonials/>
+          </div>
+        </div>
+
+        <div className="bg-[#F2F5F7] py-16">
+          <div className="container mx-auto">
+            <div className="text-center lg:mb-20 mb-12">
+              <h2 className="section-title text-black mb-3">Achieved Scholarship Fund </h2>
+              <h4 className="text-black font-normal 2xl:text-xl lg:text-lg md:text-base text-sm">The Fulbright Foreign Student Program, a highly popular government-funded US scholarship, provides graduate students, young professionals, and artists the opportunity to study in the US for a year or longer.</h4>
+            </div>
+            <div className="grid lg:grid-cols-3 grid-cols-1">
+              <div>
+                <div className="lg:px-5 py-5 lg:py-0">
+                  <div className="flex items-start">
+                    <div className="w-14 shrink-0 mr-7">
+                      <Image src={scholarshipOne} alt="verification" className="ml-2" priority/>
+                    </div>
+                    <div className="lg:space-y-6 space-y-4">
+                      <h3 className="text-2xl font-bold text-black">
+                        Clark Merit <br/> Scholarships
+                      </h3>
+                      <p>Clark University offers a variety of merit and achievement-based scholarships. All applicants are automatically considered for these scholarships. There is no need for a separate application.</p>
+                      <Link href="/" className="fill-btn text-center">Apply</Link>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div className="lg:border-l lg:border-r border-t border-b lg:border-t-0 lg:border-b-0 border-solid boder-[#D9D9D9]">
+                <div className="lg:px-5 py-5 lg:py-0">
+                  <div className="flex items-start">
+                    <div className="w-14 shrink-0 mr-7">
+                      <Image src={scholarshipTwo} alt="verification" className="ml-2" priority/>
+                    </div>
+                    <div className="lg:space-y-6 space-y-4">
+                      <h3 className="text-2xl font-bold text-black">
+                        Costs <br/>
+                        and Financial Aid
+                      </h3>
+                      <p>Located in one of the safest regions of the United States with a very affordable cost of living, we provide a high-quality education at a lower cost than similar schools in more expensive locations.</p>
+                      <Link href="/" className="fill-btn text-center">Apply</Link>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div>
+                <div className="lg:px-5 py-5 lg:py-0">
+                  <div className="flex items-start">
+                    <div className="w-14 shrink-0 mr-7">
+                      <Image src={scholarshipThree} alt="verification" className="ml-2" priority/>
+                    </div>
+                    <div className="lg:space-y-6 space-y-4">
+                      <h3 className="text-2xl font-bold text-black">
+                        Clark Merit <br/> Scholarships
+                      </h3>
+                      <p>At ETSU, we are committed to making education accessible to students from around the world. Our international scholarships exemplify this dedication, as we strive to fulfill our mission...</p>
+                      <Link href="/" className="fill-btn text-center">Apply</Link>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="lg:py-24 py-16 bottomSliderArrox">
           <div className="container mx-auto">
             <div className="text-center lg:mb-12 mb-8">
@@ -120,14 +223,15 @@ export default function Personal() {
           </div>
         </div>
 
-        <div className="pb-16 honorsAwardslider">
+        {/* <div className="pb-16 honorsAwardslider">
           <div className="container mx-auto">
             <div className="mb-8">
               <h5 className="lg:text-3xl text-2xl font-bold text-black">Education</h5>
             </div>
             <Honorsawards />
           </div>
-        </div>
+        </div> */}
+
       </div>
     </Layouts>
   );

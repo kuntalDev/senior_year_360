@@ -11,7 +11,7 @@ const Testimonialsslider = ({testimonials_sec}) => {
   const sliderNavRef = useRef(null);
   const [navReady, setNavReady] = useState(false);
   const [autoplay, setAutoplay] = useState(true);
-console.log('ryrtqwreqe',testimonials_sec);
+  //console.log('ryrtqwreqe',testimonials_sec);
   useEffect(() => {
     if (sliderForRef.current && sliderNavRef.current) {
       setNavReady(true);

@@ -14,14 +14,16 @@ export default function Footer({ menuTemeSettingData }) {
             <div>
               <div>
                 <div className="xl:max-w-60 max-w-52 md:m-0 mx-auto">
-                  <Image src={footeLogo} alt="mission" className="" priority />
+                  {menuTemeSettingData?.footer_logo && (
+                    <Image src={menuTemeSettingData?.footer_logo} width={236} height={37} alt="mission" className="" priority />
+                  )}
                 </div>
                 <div className="mt-7">
                   <ul className="flex space-x-3 md:justify-start justify-center items-center">
                     {menuTemeSettingData?.social_media?.map((items, i) => {
                       return (
                         <li key={i}>
-                          <Link href={items.link} target="_blank" className="block no-underline group">
+                          <Link href={items?.link || ''} target="_blank" className="block no-underline group">
                             <Image src={items.icon} width={23} height={23} alt="mission" className="group-hover:filter group-hover:brightness-0 group-hover:invert" priority />
                           </Link>
                         </li>
@@ -37,7 +39,7 @@ export default function Footer({ menuTemeSettingData }) {
                   {menuTemeSettingData?.footermenu1_data?.map((items, i) => {
                     return (
                       <li key={i}>
-                        <Link href={items.url} className="md:p-0 p-2 text-lg font-normal text-white hover:text-primary block no-underline hover:underline">
+                        <Link href={items?.url || ''} className="md:p-0 p-2 text-lg font-normal text-white hover:text-primary block no-underline hover:underline">
                           {items.title}
                         </Link>
                       </li>
@@ -52,7 +54,7 @@ export default function Footer({ menuTemeSettingData }) {
                 {menuTemeSettingData?.footermenu2_data?.map((items, i) => {
                     return (
                       <li key={i}>
-                        <Link href={items.url} className="md:p-0 p-2 text-lg font-normal text-white hover:text-primary block no-underline hover:underline">
+                        <Link href={items?.url || ''} className="md:p-0 p-2 text-lg font-normal text-white hover:text-primary block no-underline hover:underline">
                           {items.title}
                         </Link>
                       </li>

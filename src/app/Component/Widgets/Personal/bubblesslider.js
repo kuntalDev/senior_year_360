@@ -51,7 +51,7 @@ export default function BubblesSlider() {
               <Image src={blbeOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
             <div className="py-4 px-5 text-center md:text-left">
-              <h4 className="lg:text-xl text-lg font-semiboldtext-black mb-1">Tom Jackman</h4>
+              <h4 className="lg:text-xl text-lg font-semibold text-black mb-1">Tom Jackman</h4>
               <p className="text-sm text-[#6C6C6C] font-normal">High School Student</p>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function BubblesSlider() {
               <Image src={blbeTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
             <div className="py-4 px-5 text-center md:text-left">
-              <h4 className="lg:text-xl text-lg font-semiboldtext-black mb-1">Harrison Ford</h4>
+              <h4 className="lg:text-xl text-lg font-semibold text-black mb-1">Harrison Ford</h4>
               <p className="text-sm text-[#6C6C6C] font-normal">College Student</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function BubblesSlider() {
               <Image src={blbeThree} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
             <div className="py-4 px-5 text-center md:text-left">
-              <h4 className="lg:text-xl text-lg font-semiboldtext-black mb-1">Natalie Portman</h4>
+              <h4 className="lg:text-xl text-lg font-semibold text-black mb-1">Natalie Portman</h4>
               <p className="text-sm text-[#6C6C6C] font-normal">College Pass-out 2020</p>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function BubblesSlider() {
               <Image src={blbeFour} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
             <div className="py-4 px-5 text-center md:text-left">
-              <h4 className="lg:text-xl text-lg font-semiboldtext-black mb-1">Marlon Mirren</h4>
+              <h4 className="lg:text-xl text-lg font-semibold text-black mb-1">Marlon Mirren</h4>
               <p className="text-sm text-[#6C6C6C] font-normal">College Student</p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function BubblesSlider() {
               <Image src={blbeFive} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
             <div className="py-4 px-5 text-center md:text-left">
-              <h4 className="lg:text-xl text-lg font-semiboldtext-black mb-1">Julianne Moore</h4>
+              <h4 className="lg:text-xl text-lg font-semibold text-black mb-1">Julianne Moore</h4>
               <p className="text-sm text-[#6C6C6C] font-normal">College Student</p>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function BubblesSlider() {
               <Image src={blbeOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
             <div className="py-4 px-5 text-center md:text-left">
-              <h4 className="lg:text-xl text-lg font-semiboldtext-black mb-1">Tom Jackman</h4>
+              <h4 className="lg:text-xl text-lg font-semibold text-black mb-1">Tom Jackman</h4>
               <p className="text-sm text-[#6C6C6C] font-normal">High School Student</p>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function BubblesSlider() {
               <Image src={blbeTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
             <div className="py-4 px-5 text-center md:text-left">
-              <h4 className="lg:text-xl text-lg font-semiboldtext-black mb-1">Harrison Ford</h4>
+              <h4 className="lg:text-xl text-lg font-semibold text-black mb-1">Harrison Ford</h4>
               <p className="text-sm text-[#6C6C6C] font-normal">College Student</p>
             </div>
           </div>
