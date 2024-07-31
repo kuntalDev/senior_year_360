@@ -40,7 +40,7 @@ export default function yearlyslider() {
         }
       },
       {
-        breakpoint: 767,
+        breakpoint: 650,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

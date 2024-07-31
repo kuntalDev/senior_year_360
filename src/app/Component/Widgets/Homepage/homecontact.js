@@ -105,6 +105,7 @@ export default function Homecontact({contactUsData}) {
       <div className="flex flex-wrap">
         <div className="xl:w-7/12 md:w-6/12 w-full">
           <div className="relative z-10 h-full before:block before:w-full before:pt-[73%] mx-auto bg-primary">
+            
             {contactUsData?.contact_us_image && (
               <Image src={contactUsData?.contact_us_image} width={783} height={584} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             )}

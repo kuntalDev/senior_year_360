@@ -9,7 +9,7 @@ const TabPrice = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [videoPath, setVideoPath] = useState('');
 
-  const handleVideoClick = (path) => { // Remove type annotation
+  const handleVideoClick = (path) => {
     setVideoPath(path);
     setIsModalOpen(true);
   };
@@ -75,6 +75,112 @@ const TabPrice = () => {
           </div>
         )}
         {activeTab === "tab2" && (
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
+            <div>
+              <div className="relative rounded-md overflow-hidden mb-3">
+                <div className="relative before:block before:w-full before:pt-[66%]">
+                  <Image src={activityOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                </div>
+              </div>
+              <p className="text-xl font-semibold text-[#282828]">Basketball 2023</p>
+            </div>
+
+            <div>
+              <div className="relative rounded-md overflow-hidden mb-3">
+                <div className="relative before:block before:w-full before:pt-[66%]">
+                  <Image src={activityThree} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                </div>
+                <div className="flex items-center justify-center absolute z-20 left-0 top-0 w-full h-full bg-black bg-opacity-40">
+                  <button className="flex items-center justify-center rounded-full bg-white xl:w-14 xl:h-14 w-9 h-9 p-2" onClick={() => handleVideoClick('graduateVideo.mp4')}>
+                    <Image src={vidPlayIcon} alt="play" priority />
+                  </button>
+                </div>
+              </div>
+              <p className="text-xl font-semibold text-[#282828]">Lacrosse 2023</p>
+            </div>
+
+            <div>
+              <div className="relative rounded-md overflow-hidden mb-3">
+                <div className="relative before:block before:w-full before:pt-[66%]">
+                  <Image src={activityTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                </div>
+              </div>
+              <p className="text-xl font-semibold text-[#282828]">Lacrosse 2023</p>
+            </div>
+          </div>
+        )}
+        {activeTab === "tab3" && (
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
+
+            <div>
+              <div className="relative rounded-md overflow-hidden mb-3">
+                <div className="relative before:block before:w-full before:pt-[66%]">
+                  <Image src={activityThree} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                </div>
+                <div className="flex items-center justify-center absolute z-20 left-0 top-0 w-full h-full bg-black bg-opacity-40">
+                  <button className="flex items-center justify-center rounded-full bg-white xl:w-14 xl:h-14 w-9 h-9 p-2" onClick={() => handleVideoClick('graduateVideo.mp4')}>
+                    <Image src={vidPlayIcon} alt="play" priority />
+                  </button>
+                </div>
+              </div>
+              <p className="text-xl font-semibold text-[#282828]">Lacrosse 2023</p>
+            </div>
+
+            <div>
+              <div className="relative rounded-md overflow-hidden mb-3">
+                <div className="relative before:block before:w-full before:pt-[66%]">
+                  <Image src={activityTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                </div>
+              </div>
+              <p className="text-xl font-semibold text-[#282828]">Lacrosse 2023</p>
+            </div>
+
+            <div>
+              <div className="relative rounded-md overflow-hidden mb-3">
+                <div className="relative before:block before:w-full before:pt-[66%]">
+                  <Image src={activityOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                </div>
+              </div>
+              <p className="text-xl font-semibold text-[#282828]">Basketball 2023</p>
+            </div>
+          </div>
+        )}
+        {activeTab === "tab4" && (
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
+            <div>
+              <div className="relative rounded-md overflow-hidden mb-3">
+                <div className="relative before:block before:w-full before:pt-[66%]">
+                  <Image src={activityOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                </div>
+              </div>
+              <p className="text-xl font-semibold text-[#282828]">Basketball 2023</p>
+            </div>
+
+            <div>
+              <div className="relative rounded-md overflow-hidden mb-3">
+                <div className="relative before:block before:w-full before:pt-[66%]">
+                  <Image src={activityTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                </div>
+                <div className="flex items-center justify-center absolute z-20 left-0 top-0 w-full h-full bg-black bg-opacity-40">
+                  <button className="flex items-center justify-center rounded-full bg-white xl:w-14 xl:h-14 w-9 h-9 p-2" onClick={() => handleVideoClick('graduateVideo.mp4')}>
+                    <Image src={vidPlayIcon} alt="play" priority />
+                  </button>
+                </div>
+              </div>
+              <p className="text-xl font-semibold text-[#282828]">Lacrosse 2023</p>
+            </div>
+
+            <div>
+              <div className="relative rounded-md overflow-hidden mb-3">
+                <div className="relative before:block before:w-full before:pt-[66%]">
+                  <Image src={activityThree} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                </div>
+              </div>
+              <p className="text-xl font-semibold text-[#282828]">Lacrosse 2023</p>
+            </div>
+          </div>
+        )}
+        {activeTab === "tab5" && (
           <div className="grid md:grid-cols-3 grid-cols-1 gap-7">
             <div>
               <div className="relative rounded-md overflow-hidden mb-3">

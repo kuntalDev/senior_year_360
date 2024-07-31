@@ -61,6 +61,7 @@ export default function Page() {
     <Layouts>
       {/* {homeData ? ( */}
       <div>
+
         <div className="bg-secondary py-2 xl:mt-[102px] lg:mt-[84px] mt-[72px]">
           <div className="container mx-auto">
             <div className="flex md:flex-row flex-col items-center justify-center">
@@ -170,7 +171,7 @@ export default function Page() {
         <div className="lg:pt-40 md:pt-28 pt-14 lg:pb-32 md:pb-20 pb-9">
           <div className="container mx-auto">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-16">
-              <div>
+              <div className='md:order-none order-1'>
                 <div className="max-w-[626px] md:text-left text-center">
                   <h2 className="section-title text-black mb-3">
                     {expertData?.expert_title}
@@ -184,14 +185,12 @@ export default function Page() {
               </div>
               <div>
                 <div className="relative">
-                  <div className="relative">
-                    <div className="bg-[#FAFAFA] w-full -top-[50px] absolute left-1/2 -translate-x-1/2 before:block before:w-full before:pt-[100%] rounded-full overflow-hidden max-w-[600px]"></div>
+                    <div className="bg-[#FAFAFA] w-full -top-[50px] absolute left-1/2 -translate-x-1/2 before:block before:w-full before:pt-[100%] rounded-full overflow-hidden md:max-w-[600px] max-w-[500px]"></div>
                     <div className="relative z-10 before:block before:w-full before:pt-[100%] max-w-[460px] mx-auto">
                       {expertData?.expert_image && (
                         <Image src={expertData?.expert_image} width="491" height="488" alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                       )}
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -204,7 +203,7 @@ export default function Page() {
               <div>
                 <div className="relative">
                   <div className="relative">
-                    <div className="bg-[#FAFAFA] w-full -top-[50px] absolute left-1/2 -translate-x-1/2 before:block before:w-full before:pt-[100%] rounded-full overflow-hidden max-w-[600px]"></div>
+                    <div className="bg-[#FAFAFA] w-full -top-[50px] absolute left-1/2 -translate-x-1/2 before:block before:w-full before:pt-[100%] rounded-full overflow-hidden md:max-w-[600px] max-w-[500px]"></div>
                     <div className="relative z-10 before:block before:w-full before:pt-[100%] max-w-[460px] mx-auto">
                       {personalizedData?.personalized_image && (
                         <Image src={personalizedData?.personalized_image} width="491" height="488" alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
@@ -234,7 +233,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="lg:pt-32 pt-24 2xl:pb-28 pb-12 relative before:absolute before:w-[62vw] before:bg-[#F6F6F6] before:right-0 before:bottom-0 before:top-40 before:block">
+        <div className="lg:pt-32 pt-24 2xl:pb-28 pb-12 relative before:absolute before:w-[62vw] before:bg-[#F6F6F6] before:right-0 before:bottom-0 lg:before:top-40 before:top-0 md:before:block before:hidden">
           <div className="container mx-auto relative z-20">
             <div className="3xl:w-5/12 lg:w-[45%] 2xl:mb-14 lg:mb-4 mb-8 md:text-left text-center">
             <h2 className="section-title text-black mb-3">{testimonialsData?.testimonials_sub_title}</h2>

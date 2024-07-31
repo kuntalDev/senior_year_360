@@ -10,7 +10,7 @@ export const MenuThemeProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Fetch data from API
+  
   async function fetchMenuThemeSettingData() {
     setLoading(true);
     setError(null); // Reset error state before fetching
