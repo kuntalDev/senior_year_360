@@ -66,7 +66,12 @@ const Testimonialsslider = ({testimonials_sec}) => {
                           <Image src={textQuotations} alt="mission" priority />
                         </div>
                         <div className="relative before:block before:w-full before:pt-[62%]">
-                          <Image src={items?.image}  width={536} height={332} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                          
+                          {items?.image ? (
+                           <Image src={items?.image}  width={536} height={332} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                          ) : (
+                            <Image src={testimonialOne}  width={536} height={332} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                          )}
                         </div>
                       </div>
                     </div>
