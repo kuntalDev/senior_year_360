@@ -61,7 +61,6 @@ export default function Page() {
     <Layouts>
       {/* {homeData ? ( */}
       <div>
-
         <div className="bg-secondary py-2 xl:mt-[102px] lg:mt-[84px] mt-[72px]">
           <div className="container mx-auto">
             <div className="flex md:flex-row flex-col items-center justify-center">
