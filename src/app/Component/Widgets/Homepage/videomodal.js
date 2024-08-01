@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { blackCrossIcon } from '../../../assets/index';
+import { blackCrossIcon, userOne } from '../../../assets/index';
 
 export default function Videomodal({ HandelCloseClick, type, path }) {
+  // console.log(path);
   const HandelClose = () => {
     HandelCloseClick();
   }
@@ -16,7 +17,12 @@ export default function Videomodal({ HandelCloseClick, type, path }) {
             </video>
           ) : (
             <div className="relative before:block before:w-full before:pt-[132%]">
-              <Image className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" src={`${path}`} width={100} height={100} alt="Gradient-Tick" priority/>
+              
+              {path ? (
+                <Image className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" src={`${path}`} width={100} height={100} alt="Gradient-Tick" priority/>
+              ) : (
+                <Image className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" src={userOne} width={100} height={100} alt="Gradient-Tick" priority/>
+              )}
             </div>
           )}
           <button onClick={() => HandelClose()} className="w-6 h-6 p-1.5 rounded-full flex items-center justify-center shrink-0 bg-primary text-xl text-white font-normal absolute -top-[10px] -right-[10px]">
