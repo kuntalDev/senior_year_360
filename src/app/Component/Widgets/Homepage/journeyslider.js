@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {vidPlayIcon, userOne} from '../../../assets/index';
+import {vidPlayIcon, userOne, blankImage} from '../../../assets/index';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -52,7 +52,7 @@ export default function Journeyslider({seniorJourneyData}) {
                             <Image src={items?.image_1} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
                             />
                           ) : (
-                            <Image src={userOne} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
+                            <Image src={blankImage} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
                             />
                           )}
                         </div>
@@ -69,7 +69,7 @@ export default function Journeyslider({seniorJourneyData}) {
                             <Image src={items?.video_poster_image1} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
                             />
                           ) : (
-                            <Image src={userOne} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
+                            <Image src={blankImage} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
                             />
                           )}
                         </div>
@@ -90,7 +90,7 @@ export default function Journeyslider({seniorJourneyData}) {
                             <Image src={items?.image_2} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
                             />
                           ) : (
-                            <Image src={userOne} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
+                            <Image src={blankImage} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
                             />
                           )}
                        </div>
@@ -107,7 +107,7 @@ export default function Journeyslider({seniorJourneyData}) {
                             <Image src={items?.video_poster_image2} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
                             />
                           ) : (
-                            <Image src={userOne} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
+                            <Image src={blankImage} width={225} height={297} alt="user" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority 
                             />
                           )}
                         </div>

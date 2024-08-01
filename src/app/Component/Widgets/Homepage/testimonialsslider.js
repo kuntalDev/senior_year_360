@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { testimonialOne, textQuotations, testimonialTwo, pauseWhite, playWhite } from '../../../assets/index';
+import { testimonialOne, textQuotations, testimonialTwo, pauseWhite, playWhite,testimonialsBlank } from '../../../assets/index';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useRef, useState, useEffect } from "react";
@@ -70,7 +70,7 @@ const Testimonialsslider = ({testimonials_sec}) => {
                           {items?.image ? (
                            <Image src={items?.image}  width={536} height={332} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
                           ) : (
-                            <Image src={testimonialOne}  width={536} height={332} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
+                            <Image src={testimonialsBlank}  width={536} height={332} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority />
                           )}
                         </div>
                       </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { blackCrossIcon, userOne } from '../../../assets/index';
+import { blackCrossIcon, blankImage } from '../../../assets/index';
 
 export default function Videomodal({ HandelCloseClick, type, path }) {
   // console.log(path);
@@ -21,7 +21,7 @@ export default function Videomodal({ HandelCloseClick, type, path }) {
               {path ? (
                 <Image className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" src={`${path}`} width={100} height={100} alt="Gradient-Tick" priority/>
               ) : (
-                <Image className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" src={userOne} width={100} height={100} alt="Gradient-Tick" priority/>
+                <Image className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" src={blankImage} width={100} height={100} alt="Gradient-Tick" priority/>
               )}
             </div>
           )}

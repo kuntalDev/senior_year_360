@@ -77,6 +77,8 @@ import seniorsNine from '../assets/images/seniors-listing/senior-9.jpg'
 import seniorsTen from '../assets/images/seniors-listing/senior-10.jpg'
 import seniorsEleven from '../assets/images/seniors-listing/senior-11.jpg'
 import seniorsTwelve from '../assets/images/seniors-listing/senior-12.jpg'
+import blankImage from '../assets/images/blank_image.png'
+import testimonialsBlank from '../assets/images/testimonials_blank.png'
 
 export{
     headerLogo,graySearch,homeBanner,blackCrossIcon,userOne,userTwo,vidPlayIcon,
@@ -89,5 +91,5 @@ export{
     blbeTwo,blbeThree,blbeFour,blbeFive,awardsOne,awardsTwo,awardsThree,awardsFour,testiReviewedOne,
     testiReviewedTwo,testiReviewedThree,scholarshipOne,scholarshipTwo,scholarshipThree,seniorsOne,seniorsTwo,
     seniorsThree,seniorsFour,seniorsFive,seniorsSix,seniorsSeven,seniorsEight,seniorsNine,seniorsTen,seniorsEleven,
-    seniorsTwelve
+    seniorsTwelve,blankImage,testimonialsBlank
 }
