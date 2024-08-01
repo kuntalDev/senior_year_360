@@ -17,7 +17,6 @@ export default function Videomodal({ HandelCloseClick, type, path }) {
             </video>
           ) : (
             <div className="relative before:block before:w-full before:pt-[132%]">
-              
               {path ? (
                 <Image className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" src={`${path}`} width={100} height={100} alt="Gradient-Tick" priority/>
               ) : (

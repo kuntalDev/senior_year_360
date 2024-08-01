@@ -78,8 +78,6 @@ const Testimonialsslider = ({testimonials_sec}) => {
                   </div>
                 )
             })}
-          
-         
         </Slider>
         <button className="text-white text-sm uppercase font-bold w-7 h-7 p-1 rounded-full ml-auto flex items-center justify-center bg-primary absolute -bottom-[30px] left-[90px]"
           onClick={toggleAutoplay}
