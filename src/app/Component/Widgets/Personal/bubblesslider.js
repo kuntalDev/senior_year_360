@@ -28,9 +28,9 @@ export default function BubblesSlider() {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         }
       },
       {
@@ -44,9 +44,9 @@ export default function BubblesSlider() {
  
   return (
     <div>
-      <Slider {...aboutMeSld}>
+      <Slider {...aboutMeSld} className="fullHitSidr">
         <div className="px-3 pb-4">
-          <div className="bg-[#F9F9F9] hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
+          <div className="bg-[#F9F9F9] h-full hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
             <div className="relative before:block before:w-full before:pt-[84%]">
               <Image src={blbeOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
@@ -57,7 +57,7 @@ export default function BubblesSlider() {
           </div>
         </div>
         <div className="px-3 pb-4">
-          <div className="bg-[#F9F9F9] hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
+          <div className="bg-[#F9F9F9] h-full hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
             <div className="relative before:block before:w-full before:pt-[84%]">
               <Image src={blbeTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
@@ -68,7 +68,7 @@ export default function BubblesSlider() {
           </div>
         </div>
         <div className="px-3 pb-4">
-          <div className="bg-[#F9F9F9] hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
+          <div className="bg-[#F9F9F9] h-full hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
             <div className="relative before:block before:w-full before:pt-[84%]">
               <Image src={blbeThree} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
@@ -79,7 +79,7 @@ export default function BubblesSlider() {
           </div>
         </div>
         <div className="px-3 pb-4">
-          <div className="bg-[#F9F9F9] hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
+          <div className="bg-[#F9F9F9] h-full hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
             <div className="relative before:block before:w-full before:pt-[84%]">
               <Image src={blbeFour} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
@@ -90,7 +90,7 @@ export default function BubblesSlider() {
           </div>
         </div>
         <div className="px-3 pb-4">
-          <div className="bg-[#F9F9F9] hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
+          <div className="bg-[#F9F9F9] h-full hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
             <div className="relative before:block before:w-full before:pt-[84%]">
               <Image src={blbeFive} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
@@ -101,7 +101,7 @@ export default function BubblesSlider() {
           </div>
         </div>
         <div className="px-3 pb-4">
-          <div className="bg-[#F9F9F9] hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
+          <div className="bg-[#F9F9F9] h-full hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
             <div className="relative before:block before:w-full before:pt-[84%]">
               <Image src={blbeOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>
@@ -112,7 +112,7 @@ export default function BubblesSlider() {
           </div>
         </div>
         <div className="px-3 pb-4">
-          <div className="bg-[#F9F9F9] hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
+          <div className="bg-[#F9F9F9] h-full hover:bg-white hover:shadow-lg rounded-md overflow-hidden border border-solid border-[#E9E9E9]">
             <div className="relative before:block before:w-full before:pt-[84%]">
               <Image src={blbeTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
             </div>

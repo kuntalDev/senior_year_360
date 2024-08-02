@@ -371,8 +371,9 @@ body .slick-dots li.slick-active button:before{
   width: 100%;
 }
 .custisMulti .css-1dyz3mf {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow-x: auto;
+  height: 36px;
 }
 .custisMulti .css-1dyz3mf {
   overflow: auto;
@@ -380,9 +381,6 @@ body .slick-dots li.slick-active button:before{
   scrollbar-width: thin;
   -ms-overflow-style: none;
 }
-
-
-
 @media (max-width:1580px) {
   .senior-slde{
     max-width: 1280px;

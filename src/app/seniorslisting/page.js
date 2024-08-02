@@ -70,19 +70,19 @@ export default function Personal() {
               </from>
             </div>
 
-            <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7 pb-10">
+            <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7 pb-10">
 
               <div>
                 <div className="bg-white rounded-lg shadow-md hover:shadow-2xl h-full overflow-hidden border border-solid border-[#E9E9E9]">
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsOne} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Richard Freeman</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Richard Freeman</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Aqninas Academy of Pittsburgh</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Boxing and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">CCRT Scholarship</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Aqninas Academy of Pittsburgh</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Boxing and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">CCRT Scholarship</li>
                     </ul>
                   </div>
                 </div>
@@ -92,12 +92,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsTwo} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Meryl Blanchett</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Meryl Blanchett</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">The Jihn Cooper School</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Music and Sports</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Commonwealth Scholarship</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">The Jihn Cooper School</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Music and Sports</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Commonwealth Scholarship</li>
                     </ul>
                   </div>
                 </div>
@@ -107,12 +107,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsThree} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Harrison Jackman</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Harrison Jackman</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">High School Student</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Baseball, Boxing, Music and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Gates Cambridge Scholarship</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">High School Student</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Baseball, Boxing, Music and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Gates Cambridge Scholarship</li>
                     </ul>
                   </div>
                 </div>
@@ -122,12 +122,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsFour} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Robert Spacey</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Robert Spacey</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Archmere Academy</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Baseball, Boxing and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Onsi Sawiris Scholarship</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Archmere Academy</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Baseball, Boxing and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Onsi Sawiris Scholarship</li>
                     </ul>
                   </div>
                 </div>
@@ -137,12 +137,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsFive} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Heath Reeves</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Heath Reeves</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Oak Grove School</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Baseball, Boxing, Music and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Onsi Sawiris Scholarship</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Oak Grove School</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Baseball, Boxing, Music and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Onsi Sawiris Scholarship</li>
                     </ul>
                   </div>
                 </div>
@@ -152,12 +152,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsSix} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Annette Thompson</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Annette Thompson</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Oxford Academy</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Boxing and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Ais Technolabs Scholarships</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Oxford Academy</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Boxing and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Ais Technolabs Scholarships</li>
                     </ul>
                   </div>
                 </div>
@@ -167,12 +167,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsSeven} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Meryl Streep</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Meryl Streep</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Southern Prepara Academy</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Boxing and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Cornell University financial aid</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Southern Prepara Academy</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Boxing and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Cornell University financial aid</li>
                     </ul>
                   </div>
                 </div>
@@ -182,12 +182,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsEight} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Tom Jackson</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Tom Jackson</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Abingto Friends School</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Baseball, Boxing and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">ACI Foundation Scholarship</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Abingto Friends School</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Baseball, Boxing and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">ACI Foundation Scholarship</li>
                     </ul>
                   </div>
                 </div>
@@ -197,12 +197,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsNine} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Cate Bullock</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Cate Bullock</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Academy at the Lakes</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Baseball, Boxing, Music and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Gates Cambridge Scholarship</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Academy at the Lakes</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Baseball, Boxing, Music and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Gates Cambridge Scholarship</li>
                     </ul>
                   </div>
                 </div>
@@ -212,12 +212,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsTen} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Leonardo Smith</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Leonardo Smith</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Aqninas Academy of Pittsburgh</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Baseball, Boxing, Music and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Aqninas Academy of Pittsburgh</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Aqninas Academy of Pittsburgh</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Baseball, Boxing, Music and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Aqninas Academy of Pittsburgh</li>
                     </ul>
                   </div>
                 </div>
@@ -227,12 +227,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsEleven} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Marlon Mirren</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Marlon Mirren</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Academy Og Holy Angels</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Boxing and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">ACI Foundation Scholarship</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Academy Og Holy Angels</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Boxing and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">ACI Foundation Scholarship</li>
                     </ul>
                   </div>
                 </div>
@@ -242,12 +242,12 @@ export default function Personal() {
                   <div className="relative before:block before:w-full before:pt-[80%] bg-primary">
                     <Image src={seniorsTwelve} alt="mission" className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover" priority/>
                   </div>
-                  <div className="space-y-4 px-8 py-5">
-                    <h3 className="text-2xl font-medium text-black">Robert Cruise</h3>
+                  <div className="md:space-y-4 space-y-3 md:px-8 px-6 md:py-5 py-3">
+                    <h3 className="md:text-2xl text-xl font-medium text-black">Robert Cruise</h3>
                     <ul>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Oxford Academy</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Baseball, Boxing and Soccer</li>
-                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-1">Commonwealth Scholarship</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Oxford Academy</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Baseball, Boxing and Soccer</li>
+                      <li className="md:text-lg sm:text-base text-sm font-normal text-[#585858] border-t border-solid border-[#EDEDED] py-2">Commonwealth Scholarship</li>
                     </ul>
                   </div>
                 </div>
@@ -256,10 +256,10 @@ export default function Personal() {
             </div>
 
             <div className="grid grid-cols-5 w-fit gap-3 ml-auto py-8">
-              <Link href="#" className="w-10 h-10 flex items-center justify-center bg-white rounded-md border border-solid border-[#B0B0B0] text-lg text-black font-bold">
+              <Link href="#" className="w-10 h-10 flex items-center justify-center bg-primary rounded-md border border-solid border-primary text-lg text-white font-bold">
                 1
               </Link>
-              <Link href="#" className="w-10 h-10 flex items-center justify-center bg-primary rounded-md border border-solid border-primary text-lg text-white font-bold">
+              <Link href="#" className="w-10 h-10 flex items-center justify-center bg-white rounded-md border border-solid border-[#B0B0B0] text-lg text-black font-bold">
                 2
               </Link>
               <Link href="#" className="w-10 h-10 flex items-center justify-center bg-white rounded-md border border-solid border-[#B0B0B0] text-lg text-black font-bold">

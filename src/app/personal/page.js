@@ -57,14 +57,16 @@ export default function Personal() {
               </h2>
               <h4 className="text-black font-normal 2xl:text-3xl lg:text-2xl md:text-xl text-2xl">Discover key <span className="text-primary font-semibold">resources to help</span> you transition smoothly to senior year.</h4>
             </div>
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-              <div>
-                <AboutmeSlider/>
+            <div className="grid lg:grid-cols-[repeat(auto-fit,_minmax(455px,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(380px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(260px,_1fr))] grid-cols-1 lg:gap-x-10 gap-x-7 lg:gap-y-8 sm:gap-y-4 gap-y-8">
+              <div className="sm:col-[1_/_2] lg:row-[1_/_3] sm:row-[1_/_2] flex">
+                <div className="w-full">
+                  <AboutmeSlider/>
+                </div>
               </div>
-              <div>
+              <div className="sm:col-[2_/_3] sm:row-[1_/_2] flex">
                 <div> 
                   <h4 className="lg:text-3xl text-2xl font-bold text-black mb-4">Achievements</h4>
-                  <ul className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 text-black list-decimal pl-5 gap-3 mb-8">
+                  <ul className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 text-black list-decimal pl-5 gap-3">
                     <li className="md:text-lg sm:text-base text-sm font-normal">Academic Excellence</li>
                     <li className="md:text-lg sm:text-base text-sm font-normal">Scholarships and Awards</li>
                     <li className="md:text-lg sm:text-base text-sm font-normal">Research and Publications</li>
@@ -75,9 +77,13 @@ export default function Personal() {
                     <li className="md:text-lg sm:text-base text-sm font-normal">Professional Development</li>
                     <li className="md:text-lg sm:text-base text-sm font-normal">Global Engagement</li>
                   </ul>
+                </div>
+              </div>
+              <div className="lg:col-[2_/_3] sm:col-[1_/_3] lg:row-[2_/_3] sm:row-[2_/_3] flex">
+                 <div>
                   <h4 className="lg:text-3xl text-2xl font-bold text-black mb-4">Future Goals</h4>
                   <p className="md:text-lg sm:text-base text-sm font-normal text-[#484848] leading-relaxed">Explore a robust array of tools and resources designed to propel you to academic success. Whether you&apos;re seeking additional support in specific subjects, looking for tutoring options, or aiming to gain a competitive edge in college admissions, our website has you covered.</p>
-                </div>
+                 </div>
               </div>
             </div>
           </div>
@@ -159,52 +165,52 @@ export default function Personal() {
             </div>
             <div className="grid lg:grid-cols-3 grid-cols-1">
               <div>
-                <div className="lg:px-5 py-5 lg:py-0">
-                  <div className="flex items-start">
+                <div className="lg:px-5 py-5 lg:py-0 h-full">
+                  <div className="flex items-start h-full">
                     <div className="w-14 shrink-0 mr-7">
                       <Image src={scholarshipOne} alt="verification" className="ml-2" priority/>
                     </div>
-                    <div className="lg:space-y-6 space-y-4">
-                      <h3 className="text-2xl font-bold text-black">
+                    <div className="h-full flex flex-col items-start">
+                      <h3 className="text-2xl font-bold text-black mb-4">
                         Clark Merit <br/> Scholarships
                       </h3>
-                      <p>Clark University offers a variety of merit and achievement-based scholarships. All applicants are automatically considered for these scholarships. There is no need for a separate application.</p>
-                      <Link href="/" className="fill-btn text-center">Apply</Link>
+                      <p className="mb-4">Clark University offers a variety of merit and achievement-based scholarships. All applicants are automatically considered for these scholarships. There is no need for a separate application.</p>
+                      <Link href="/" className="fill-btn text-center mt-auto">Apply</Link>
                     </div>
                   </div>
                   
                 </div>
               </div>
               <div className="lg:border-l lg:border-r border-t border-b lg:border-t-0 lg:border-b-0 border-solid boder-[#D9D9D9]">
-                <div className="lg:px-5 py-5 lg:py-0">
-                  <div className="flex items-start">
+                <div className="lg:px-5 py-5 lg:py-0 h-full">
+                  <div className="flex items-start h-full">
                     <div className="w-14 shrink-0 mr-7">
                       <Image src={scholarshipTwo} alt="verification" className="ml-2" priority/>
                     </div>
-                    <div className="lg:space-y-6 space-y-4">
-                      <h3 className="text-2xl font-bold text-black">
+                    <div className="h-full flex flex-col items-start">
+                      <h3 className="text-2xl font-bold text-black mb-4">
                         Costs <br/>
                         and Financial Aid
                       </h3>
-                      <p>Located in one of the safest regions of the United States with a very affordable cost of living, we provide a high-quality education at a lower cost than similar schools in more expensive locations.</p>
-                      <Link href="/" className="fill-btn text-center">Apply</Link>
+                      <p className="mb-4">Located in one of the safest regions of the United States with a very affordable cost of living, we provide a high-quality education at a lower cost than similar schools in more expensive locations.</p>
+                      <Link href="/" className="fill-btn text-center mt-auto">Apply</Link>
                     </div>
                   </div>
                   
                 </div>
               </div>
               <div>
-                <div className="lg:px-5 py-5 lg:py-0">
-                  <div className="flex items-start">
+                <div className="lg:px-5 py-5 lg:py-0 h-full">
+                  <div className="flex items-start h-full">
                     <div className="w-14 shrink-0 mr-7">
                       <Image src={scholarshipThree} alt="verification" className="ml-2" priority/>
                     </div>
-                    <div className="lg:space-y-6 space-y-4">
-                      <h3 className="text-2xl font-bold text-black">
+                    <div className="h-full flex flex-col items-start">
+                      <h3 className="text-2xl font-bold text-black mb-4">
                         Clark Merit <br/> Scholarships
                       </h3>
-                      <p>At ETSU, we are committed to making education accessible to students from around the world. Our international scholarships exemplify this dedication, as we strive to fulfill our mission...</p>
-                      <Link href="/" className="fill-btn text-center">Apply</Link>
+                      <p className="mb-4">At ETSU, we are committed to making education accessible to students from around the world. Our international scholarships exemplify this dedication, as we strive to fulfill our mission...</p>
+                      <Link href="/" className="fill-btn text-center mt-auto">Apply</Link>
                     </div>
                   </div>
                   
