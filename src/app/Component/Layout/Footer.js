@@ -16,7 +16,9 @@ export default function Footer({ menuTemeSettingData }) {
                 <div className="xl:max-w-60 max-w-52 md:m-0 mx-auto">
                   
                   {menuTemeSettingData?.footer_logo && (
-                   <Image src={menuTemeSettingData?.footer_logo} width={236} height={37} alt="mission" className="" priority />
+                  <Link href="/">
+                    <Image src={menuTemeSettingData?.footer_logo} width={236} height={37} alt="mission" className="" priority />
+                  </Link>
                   )}
                 </div>
                 <div className="mt-7">

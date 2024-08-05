@@ -97,6 +97,15 @@ body .slick-dots li.slick-active button:before{
   background-image: url('assets/images/icon/slider-right.svg');
   right: -60px;
 }
+.slick-arrow.slick-prev:not(.slick-disabled):hover,
+.slick-arrow.slick-next:not(.slick-disabled):hover{
+  background-color: #009afa2a;
+  border-color: #009afa;
+}
+.slick-arrow.slick-disabled{
+  opacity: 0.4;
+  cursor: default;
+}
 .senior-slde .slick-track{
   display: flex;
 }
@@ -202,15 +211,16 @@ body .slick-dots li.slick-active button:before{
   position: static;
 }
 .bottomSliderArrox .slick-arrow.slick-prev{
-  background-image: url('assets/images/icon/right-arrow-brow.svg');
-  order: 1;
-  margin-right: auto;
-  transform: translateX(10px);
-}
-.bottomSliderArrox .slick-arrow.slick-next{
   background-image: url('assets/images/icon/left-arrow-brow.svg');
+  order: 1;
   margin-left: auto;
   transform: translateX(-10px);
+}
+.bottomSliderArrox .slick-arrow.slick-next{
+  background-image: url('assets/images/icon/right-arrow-brow.svg');
+  order: 2;
+  margin-right: auto;
+  transform: translateX(10px);
 }
 .bottomSliderArrox.Arrox-nxOrd .slick-arrow.slick-prev{
   background-image: url('assets/images/icon/left-arrow-brow.svg') !important;
@@ -225,10 +235,6 @@ body .slick-dots li.slick-active button:before{
   transform: translateX(10px);
   order: 3;
   margin-left: 0;
-}
-.bottomSliderArrox.Arrox-nxOrd .slick-arrow.slick-disabled{
-  opacity: 0.4;
-  cursor: default;
 }
 
 .fullHitSidr .slick-track{
@@ -380,6 +386,18 @@ body .slick-dots li.slick-active button:before{
   scrollbar-color: #888888 #f1f1f1;
   scrollbar-width: thin;
   -ms-overflow-style: none;
+}
+.custisMulti .css-15lsz6c-indicatorContainer,
+.custisMulti .css-1xc3v61-indicatorContainer {
+  padding-right: 1px;
+}
+.custisMulti .css-15lsz6c-indicatorContainer svg{
+  transform: rotate(180deg);
+}
+.custisMulti .css-tj5bde-Svg {
+  width: 17px;
+  height: 17px;
+  fill: #6e6c6c;
 }
 @media (max-width:1580px) {
   .senior-slde{

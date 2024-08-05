@@ -64,9 +64,9 @@ export default function Personal() {
                 </div>
               </div>
               <div className="sm:col-[2_/_3] sm:row-[1_/_2] flex">
-                <div> 
+                <div className="w-full"> 
                   <h4 className="lg:text-3xl text-2xl font-bold text-black mb-4">Achievements</h4>
-                  <ul className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 text-black list-decimal pl-5 gap-3">
+                  <ul className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 text-black list-decimal pl-5 gap-y-3 gap-x-5">
                     <li className="md:text-lg sm:text-base text-sm font-normal">Academic Excellence</li>
                     <li className="md:text-lg sm:text-base text-sm font-normal">Scholarships and Awards</li>
                     <li className="md:text-lg sm:text-base text-sm font-normal">Research and Publications</li>
@@ -93,7 +93,7 @@ export default function Personal() {
           <div className="container mx-auto">
             <div className="border border-solid border-[#E7E7E7] rounded-lg py-5 px-7">
               <h5 className="lg:text-3xl text-2xl font-bold text-black bg-white px-2 w-fit -mt-10">Education</h5>
-              <div className="flex flex-wrap lg:space-y-0 space-y-5 lg:mt-0 mt-6">
+              <div className="flex flex-wrap lg:space-y-0 space-y-5 lg:mt-2 mt-6">
                 <div className="flex flex-wrap lg:w-8/12 w-full md:space-y-0 space-y-5">
                   <div className="md:w-6/12 w-full flex items-end">
                     <div className="flex space-x-4">
@@ -138,7 +138,7 @@ export default function Personal() {
           </div>
         </div>
 
-        <div className="bg-[#F2F5F7] lg:py-24 py-16">
+        <div className="bg-[#F2F5F7] lg:py-24 py-16 bottomSliderArrox">
           <div className="container mx-auto">
             <div className="text-center lg:mb-12 mb-8">
               <h2 className="section-title">Enrichment Programs</h2>
@@ -151,7 +151,7 @@ export default function Personal() {
           <div className="container mx-auto">
             <div className="text-center mb-10">
               <h2 className="section-title text-black mb-3">Testimonials</h2>
-              <h4 className="text-black font-normal 2xl:text-3xl lg:text-2xl md:text-xl text-2xl">What Our Friends, Family, And Teachers Are Saying</h4>
+              <h4 className="text-black font-normal 2xl:text-3xl lg:text-2xl md:text-xl text-lg">What Our Friends, Family, And Teachers Are Saying</h4>
             </div>
             <Personalizedtestimonials/>
           </div>
@@ -175,7 +175,7 @@ export default function Personal() {
                         Clark Merit <br/> Scholarships
                       </h3>
                       <p className="mb-4">Clark University offers a variety of merit and achievement-based scholarships. All applicants are automatically considered for these scholarships. There is no need for a separate application.</p>
-                      <Link href="/" className="fill-btn text-center mt-auto">Apply</Link>
+                      <Link href="/" className="fill-btn text-center mt-auto uppercase">Apply</Link>
                     </div>
                   </div>
                   
@@ -193,7 +193,7 @@ export default function Personal() {
                         and Financial Aid
                       </h3>
                       <p className="mb-4">Located in one of the safest regions of the United States with a very affordable cost of living, we provide a high-quality education at a lower cost than similar schools in more expensive locations.</p>
-                      <Link href="/" className="fill-btn text-center mt-auto">Apply</Link>
+                      <Link href="/" className="fill-btn text-center mt-auto uppercase">Apply</Link>
                     </div>
                   </div>
                   
@@ -210,7 +210,7 @@ export default function Personal() {
                         Clark Merit <br/> Scholarships
                       </h3>
                       <p className="mb-4">At ETSU, we are committed to making education accessible to students from around the world. Our international scholarships exemplify this dedication, as we strive to fulfill our mission...</p>
-                      <Link href="/" className="fill-btn text-center mt-auto">Apply</Link>
+                      <Link href="/" className="fill-btn text-center mt-auto uppercase">Apply</Link>
                     </div>
                   </div>
                   

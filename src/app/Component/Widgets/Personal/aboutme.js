@@ -44,7 +44,7 @@ export default function AboutmeSlider() {
               <video
                 className="absolute left-0 right-0 top-0 bottom-0 w-full h-full object-cover"
                 muted
-                controls
+                
                 onPause={() => setIsPlaying(false)}
                 onPlay={() => setIsPlaying(true)}
               >
@@ -52,11 +52,9 @@ export default function AboutmeSlider() {
                 Your browser does not support the video tag.
               </video>
               {!isPlaying && (
-                <button
-                  className="flex items-center justify-center rounded-full bg-white xl:w-14 xl:h-14 w-9 h-9 p-2 absolute z-20 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-                  onClick={(e) => handlePlayClick(e.currentTarget.previousSibling)}
-                >
-                  <Image src={vidPlayIcon} alt="play" priority />
+                <button className="flex items-center justify-center rounded-full bg-white xl:w-14 xl:h-14 w-9 h-9 p-[11px] absolute z-20 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
+                  onClick={(e) => handlePlayClick(e.currentTarget.previousSibling)}>
+                  <Image src={vidPlayIcon} alt="play" priority className="relative left-[2px]"/>
                 </button>
               )}
             </div>

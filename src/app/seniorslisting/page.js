@@ -51,15 +51,15 @@ export default function Personal() {
                     </div>
                     <div>
                       <label className="text-base block font-semibold text-[#252525] mb-2 capitalize">Interests</label>
-                      <Select isMulti options={options} value={selectedOptions} onChange={handleSelectChange} className="focus:outline-none"/>
+                      <Select isMulti options={options} value={selectedOptions} onChange={handleSelectChange} className="focus:outline-none" placeholder="Select"/>
                     </div>
                     <div>
                       <label className="text-base block font-semibold text-[#252525] mb-2 capitalize">Achievements</label>
                       <select name="" id="" className="border border-solid border-[#1C1C1C] rounded-md w-full border-opacity-35 px-4 h-10 text-[#737373] text-base font-normal focus:outline-none">
-                        <option value="Select" selected>Select </option>
-                        <option value="Select1">Select1 </option>
+                        <option value="Select1">Select </option>
                         <option value="Select2">Select2 </option>
                         <option value="Select3">Select3 </option>
+                        <option value="Select4">Select4 </option>
                       </select>
                     </div>
                   </div>
