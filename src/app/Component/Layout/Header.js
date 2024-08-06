@@ -17,6 +17,13 @@ export default function Header({ menuTemeSettingData }) {
         }
     };
 
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+        if (typeof document !== 'undefined') {
+            document.body.classList.remove('overflow-hidden');
+        }
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             const header = document.querySelector('header');
@@ -39,7 +46,7 @@ export default function Header({ menuTemeSettingData }) {
         <header className='w-full xl:py-7 py-5 fixed left-0 top-0 bg-white z-[999] transition-all duration-300'>
             <div className='container mx-auto'>
                 <div className='w-full flex items-center'>
-                    <Link href='/' className='block xl:w-[235px] w-[180px]'>
+                    <Link href='/' className='block xl:w-[235px] w-[180px]' onClick={handleLinkClick}>
                         {menuTemeSettingData?.header_logo ? (
                             <Image src={menuTemeSettingData.header_logo} width={235} height={37} alt="logo" priority />
                         ) : null}
@@ -50,7 +57,7 @@ export default function Header({ menuTemeSettingData }) {
                                 const isActive = currentPath === items.url;
                                 return (
                                     <li key={i}>
-                                        <Link href={items.url} className={`text-xl lg:text-lg block text-black font-normal no-underline py-2 hover:text-primary ${isActive ? 'text-primary' : ''}`}>
+                                        <Link href={items.url} className={`text-xl lg:text-lg block text-black font-normal no-underline py-2 hover:text-primary ${isActive ? 'text-primary' : ''}`} onClick={handleLinkClick}>
                                             {items.title}
                                         </Link>
                                     </li>
@@ -58,7 +65,7 @@ export default function Header({ menuTemeSettingData }) {
                             })}
                         </ul>
                         {menuTemeSettingData?.registration_button_text ? (
-                            <Link href={menuTemeSettingData?.registration_button_url} className='fill-btn lmd:ml-12 lg:ml-9 w-fit'>
+                            <Link href={menuTemeSettingData?.registration_button_url} className='fill-btn lmd:ml-12 lg:ml-9 w-fit' onClick={handleLinkClick}>
                                 {menuTemeSettingData?.registration_button_text}
                             </Link>
                         ) : null}

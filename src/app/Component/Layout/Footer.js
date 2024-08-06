@@ -52,7 +52,7 @@ export default function Footer({ menuTemeSettingData }) {
               </div>
             </div>
             <div>
-              <div className="w-fit xl:mx-auto md:m-0 mx-auto">
+              <div className="w-fit xl:ml-[16%] md:m-0 mx-auto">
                 <ul className="flex flex-wrap md:space-y-3 justify-center md:justify-start md:flex-col md:text-left text-center">
                 {menuTemeSettingData?.footermenu2_data?.map((items, i) => {
                     return (

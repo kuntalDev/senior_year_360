@@ -78,7 +78,7 @@ export default function Page() {
             <div className="max-w-[510px] mx-auto md:mx-0 bg-black bg-opacity-55 text-white md:px-8 md:py-9 px-5 py-5 md:text-left text-center">
               <h1 className="section-title mb-3 primary-inherit" dangerouslySetInnerHTML={{__html: bannerData?.banner_title}}></h1>
               <p className="md:text-lg sm:text-base text-sm font-normal mb-5" dangerouslySetInnerHTML={{__html: bannerData?.banner_description}}></p>
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap justify-center md:justify-start">
                 <Link href="/" className="m-2 fill-btn md:w-auto text-center md:text-left md:justify-start justify-center">Registration</Link>
                 <Link href={bannerData?.know_more_button_url || ''} className="m-2 outline-btn md:w-auto text-center md:text-left md:justify-start justify-center text-white border-white">{bannerData?.know_more_button_text}</Link>
               </div>

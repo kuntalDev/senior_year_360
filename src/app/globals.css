@@ -331,7 +331,7 @@ body .slick-dots li.slick-active button:before{
 .custisMulti .css-13cymwt-control {
   position: relative;
   min-height: 40px;
-  border: 1px solid #9b9b9b;
+  border: 1px solid #9b9b9b !important;
 }
 .custisMulti .css-1wy0on6{
   position: absolute;
@@ -347,6 +347,9 @@ body .slick-dots li.slick-active button:before{
 .custisMulti .css-13cymwt-control:focus .css-t3ipsp-control,
 .custisMulti .css-t3ipsp-control:hover {
   border-color: #00000000 !important;
+}
+.custisMulti .css-t3ipsp-control:hover{
+  border-width: 1px !important;
 }
 .custisMulti .css-1p3m7a8-multiValue {
   background-color: #00A6FB;
@@ -391,14 +394,19 @@ body .slick-dots li.slick-active button:before{
 .custisMulti .css-1xc3v61-indicatorContainer {
   padding-right: 1px;
 }
-.custisMulti .css-15lsz6c-indicatorContainer svg{
-  transform: rotate(180deg);
-}
 .custisMulti .css-tj5bde-Svg {
   width: 17px;
   height: 17px;
   fill: #6e6c6c;
 }
+.custisMulti .css-b62m3t-container>span:first-child,
+.custisMulti .css-b62m3t-container>span:first-child+span{
+  display: none !important;
+}
+
+
+
+
 @media (max-width:1580px) {
   .senior-slde{
     max-width: 1280px;

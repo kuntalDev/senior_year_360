@@ -74,7 +74,7 @@ export default function Journeyslider({seniorJourneyData}) {
                           )}
                         </div>
                         <button onClick={() => OpenModal('video', items?.video_1)} className="flex items-center justify-center rounded-full bg-white xl:w-14 xl:h-14 md:w-9 md:h-9 w-6 h-6 p-2 absolute z-20 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
-                          <Image src={vidPlayIcon} alt="play" priority/>
+                          <Image src={vidPlayIcon} alt="play" priority className="relative left-[2px]"/>
                         </button>
                         <div className="md:[box-shadow:0px_5px_4px_0px_rgba(0,_0,_0,_0.21)] [box-shadow:0px_2px_2px_0px_rgba(0,_0,_0,_0.21)] bg-white md:px-4 px-2 md:py-2 py-1 w-10/12 rounded-sm absolute left-1/2 -translate-x-1/2 z-10 -bottom-[21px]">
                           <p className="3xl:text-lg xl:text-base sm:text-sm text-[11px] font-bold text-black text-center primary-inherit" dangerouslySetInnerHTML={{__html: items?.media_text2}}></p>
@@ -112,7 +112,7 @@ export default function Journeyslider({seniorJourneyData}) {
                           )}
                         </div>
                         <button onClick={() => OpenModal('video', items?.video_2)} className="flex items-center justify-center rounded-full bg-white xl:w-14 xl:h-14 md:w-9 md:h-9 w-6 h-6 p-2 absolute z-20 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
-                          <Image src={vidPlayIcon} alt="play" priority/>
+                          <Image src={vidPlayIcon} alt="play" priority className="relative left-[2px]"/>
                         </button>
                         <div className="md:[box-shadow:0px_5px_4px_0px_rgba(0,_0,_0,_0.21)] [box-shadow:0px_2px_2px_0px_rgba(0,_0,_0,_0.21)] bg-white md:px-4 px-2 md:py-2 py-1 w-10/12 rounded-sm absolute left-1/2 -translate-x-1/2 z-10 -bottom-[21px]">
                           <p className="3xl:text-lg xl:text-base sm:text-sm text-[11px] font-bold text-black text-center primary-inherit" dangerouslySetInnerHTML={{__html: items?.media_text2}}></p>

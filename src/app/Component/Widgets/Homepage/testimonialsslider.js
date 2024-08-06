@@ -85,7 +85,7 @@ const Testimonialsslider = ({testimonials_sec}) => {
           {autoplay ? (
             <Image src={pauseWhite} alt="pause" priority />
           ) : (
-            <Image src={playWhite} alt="play" priority />
+            <Image src={playWhite} alt="play" priority className="relative left-[2px]"/>
           )}
         </button>
       </div>

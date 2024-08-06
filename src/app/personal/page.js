@@ -66,7 +66,7 @@ export default function Personal() {
               <div className="sm:col-[2_/_3] sm:row-[1_/_2] flex">
                 <div className="w-full"> 
                   <h4 className="lg:text-3xl text-2xl font-bold text-black mb-4">Achievements</h4>
-                  <ul className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 text-black list-decimal pl-5 gap-y-3 gap-x-5">
+                  <ul className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 text-black list-decimal pl-5 gap-y-3 xl:gap-x-5 gap-x-7">
                     <li className="md:text-lg sm:text-base text-sm font-normal">Academic Excellence</li>
                     <li className="md:text-lg sm:text-base text-sm font-normal">Scholarships and Awards</li>
                     <li className="md:text-lg sm:text-base text-sm font-normal">Research and Publications</li>

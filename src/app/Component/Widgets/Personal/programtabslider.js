@@ -97,7 +97,7 @@ const TabPrice = () => {
                       className="flex items-center justify-center rounded-full bg-white xl:w-14 xl:h-14 w-9 h-9 p-2 absolute z-20 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                       onClick={(e) => handlePlayClick(e.currentTarget.previousSibling)}
                     >
-                      <Image src={vidPlayIcon} alt="play" priority />
+                      <Image src={vidPlayIcon} alt="play" priority className="relative left-[2px]"/>
                     </button>
                   )}
                 </div>
