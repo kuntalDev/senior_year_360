@@ -22,6 +22,8 @@ import pauseWhite from '../assets/images/icon/pause-fill-white.svg'
 import playWhite from '../assets/images/icon/play-fill-white.svg'
 import iconX from '../assets/images/icon/x.svg'
 import whiteLogoXl from '../assets/images/white-logo-xl.svg'
+import eyeSlash from '../assets/images/icon/eye-slash.svg'
+import eyeOpen from '../assets/images/icon/eye.svg'
 
 
 import userOne from '../assets/images/user-1.webp'
@@ -93,5 +95,5 @@ export{
     blbeTwo,blbeThree,blbeFour,blbeFive,awardsOne,awardsTwo,awardsThree,awardsFour,testiReviewedOne,
     testiReviewedTwo,testiReviewedThree,scholarshipOne,scholarshipTwo,scholarshipThree,seniorsOne,seniorsTwo,
     seniorsThree,seniorsFour,seniorsFive,seniorsSix,seniorsSeven,seniorsEight,seniorsNine,seniorsTen,seniorsEleven,
-    seniorsTwelve,blankImage,testimonialsBlank,whiteLogoXl
+    seniorsTwelve,blankImage,testimonialsBlank,whiteLogoXl,eyeSlash,eyeOpen
 }
