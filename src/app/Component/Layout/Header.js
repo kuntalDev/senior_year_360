@@ -43,7 +43,7 @@ export default function Header({ menuTemeSettingData }) {
     }, []);
 
     return (
-        <header className='w-full xl:py-7 py-5 fixed left-0 top-0 bg-white z-[999] transition-all duration-300'>
+        <header className='w-full xl:py-7 py-5 fixed left-0 top-0 bg-white z-[999] transition-all duration-300 border-b border-solid border-[#EBEBEB]'>
             <div className='container mx-auto'>
                 <div className='w-full flex items-center'>
                     <Link href='/' className='block xl:w-[235px] w-[180px]' onClick={handleLinkClick}>

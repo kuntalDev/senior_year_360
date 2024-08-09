@@ -54,6 +54,32 @@ strong{
 .progress-tooltp{
   @apply text-xs font-semibold text-center text-[#434E5A] bg-white py-1 px-2 rounded border border-solid border-[#CDD1D7] absolute -right-[18px] -top-9 after:border-[#CDD1D7] after:block after:bg-white after:absolute after:left-2/4 after:-translate-x-1/2 after:rotate-45 after:-bottom-[5px] after:border-r after:border-b after:border-solid after:w-2 after:h-2 [box-shadow:0px_2px_3px_0px_rgba(0,_0,_0,_0.14)]
 }
+
+.inputfild-style{
+  @apply px-4 py-3 3xl:text-base text-sm font-normal text-black border border-solid border-[#CFD0D1] rounded-md w-full
+}
+.frm-submit{
+  @apply bg-[#0278FA] w-full rounded-md font-semibold xl:text-lg text-base text-white px-10 py-2.5 hover:bg-opacity-80
+}
+.regis-leftside::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url('assets/images/wabe-pplx.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.frm-bg-radial{
+    background: rgb(2,120,250);
+    background: -moz-radial-gradient(circle, rgba(2,120,250,1) 0%, rgba(17,37,55,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(2,120,250,1) 0%, rgba(17,37,55,1) 100%);
+    background: radial-gradient(circle, #0079ff99 0%, #112537 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0278fa",endColorstr="#112537",GradientType=1);
+}
 body .slick-dots li button:before {
   font-size: 10px;
   width: 12px;
@@ -403,6 +429,37 @@ body .slick-dots li.slick-active button:before{
 .custisMulti .css-b62m3t-container>span:first-child+span{
   display: none !important;
 }
+
+.ukp-inplb label {
+  position: absolute;
+  left: 16px;
+  top: 15px;
+  background: white;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+  padding: 1px 8px;
+}
+
+.ukp-inplb input {
+  appearance: none;
+}
+
+.ukp-inplb input[type="date"] {
+  appearance: none; 
+  position: relative;
+}
+
+.ukp-inplb input:focus ~ label,
+.ukp-inplb input:not(:placeholder-shown) ~ label,
+.ukp-inplb input[type="date"]:valid ~ label {
+  top: -8px;
+}
+
+.ukp-inplb input:focus {
+  outline: none;
+  border-color: #2295FF;
+}
+
 
 
 
