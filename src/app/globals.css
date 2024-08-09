@@ -440,7 +440,7 @@ body .slick-dots li.slick-active button:before{
   padding: 1px 8px;
 }
 
-.ukp-inplb input {
+.ukp-inplb input:not([type="checkbox"]) {
   appearance: none;
 }
 
